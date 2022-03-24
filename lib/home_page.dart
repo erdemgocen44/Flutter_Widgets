@@ -16,11 +16,20 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Center(
         child: Container(
-          child: TextButton(
-            onPressed: () {},
-            child: Text("Clippers"),
+            child: ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, "/clippers");
+          },
+          style: ElevatedButton.styleFrom(
+            elevation: 10.0,
+            primary: Colors.amber, // Background color
+            onPrimary: Colors.black, // Text Color (Foreground color)
           ),
-        ),
+          child: const Text(
+            'Clippers',
+            style: TextStyle(fontSize: 20),
+          ),
+        )),
       ),
     );
   }
