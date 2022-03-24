@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'core/my_button.dart';
+
 void main() => runApp(HomePage());
 
 class HomePage extends StatefulWidget {
@@ -14,22 +16,24 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Widgets'),
       ),
-      body: Center(
-        child: Container(
-            child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, "/clippers");
-          },
-          style: ElevatedButton.styleFrom(
-            elevation: 10.0,
-            primary: Colors.amber, // Background color
-            onPrimary: Colors.black, // Text Color (Foreground color)
-          ),
-          child: const Text(
-            'Clippers',
-            style: TextStyle(fontSize: 20),
-          ),
-        )),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                CustomElevatedButton(
+                  yazi: 'Clippers',
+                  primary: Colors.amber,
+                  onprimary: Colors.red,
+                  rota: '/clippers',
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
