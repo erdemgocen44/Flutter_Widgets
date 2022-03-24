@@ -21,13 +21,13 @@ class CustomElevatedButton extends StatelessWidget {
         Navigator.pushNamed(context, rota);
       },
       style: ElevatedButton.styleFrom(
-        elevation: 10.0,
-        primary: Colors.amber, // Background color
-        onPrimary: Colors.black, // Text Color (Foreground color)
-      ),
-      child: const Text(
-        'Clippers',
-        style: TextStyle(fontSize: 20),
+          elevation: 10.0,
+          primary: primary, // Background color
+          onPrimary: onprimary // Text Color (Foreground color)
+          ),
+      child: Text(
+        yazi,
+        style: const TextStyle(fontSize: 20),
       ),
     );
   }
