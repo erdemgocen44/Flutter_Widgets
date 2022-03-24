@@ -6,7 +6,7 @@ class CustomElevatedButton extends StatelessWidget {
   final Color onprimary;
   final String yazi;
 
-  const CustomElevatedButton(
+  CustomElevatedButton(
       {Key? key,
       required this.rota,
       required this.primary,
@@ -16,18 +16,21 @@ class CustomElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        Navigator.pushNamed(context, rota);
-      },
-      style: ElevatedButton.styleFrom(
-          elevation: 10.0,
-          primary: primary, // Background color
-          onPrimary: onprimary // Text Color (Foreground color)
-          ),
-      child: Text(
-        yazi,
-        style: const TextStyle(fontSize: 20),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.pushNamed(context, rota);
+        },
+        style: ElevatedButton.styleFrom(
+            elevation: 10.0,
+            primary: primary, // Background color
+            onPrimary: onprimary // Text Color (Foreground color)
+            ),
+        child: Text(
+          yazi,
+          style: const TextStyle(fontSize: 20),
+        ),
       ),
     );
   }
