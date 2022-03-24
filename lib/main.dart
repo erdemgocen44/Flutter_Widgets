@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:widgets/widgets/clippers/clip_shadow_path.dart';
-import 'package:widgets/widgets/clippers/custom_clippers.dart';
+import 'home_page.dart';
 
 void main() => runApp(Widgets());
 
 class Widgets extends StatelessWidget {
+  const Widgets({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Widgets',
-      home: Scaffold(
-        backgroundColor: Colors.red,
-        body: ClippersPage(),
-      ),
+      home: HomePage(),
+      routes: routes,
     );
   }
 }
+
+var routes = <String, WidgetBuilder>{
+  "/homepage": (BuildContext context) => HomePage(),
+};
