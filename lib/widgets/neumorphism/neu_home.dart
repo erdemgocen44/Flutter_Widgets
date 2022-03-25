@@ -17,9 +17,34 @@ class _NeumorpHomeState extends State<NeumorpHome> {
       body: Center(
         child: GestureDetector(
           onTap: () {
-            setState(() {});
+            setState(() {
+              _isElevated = !_isElevated;
+            });
           },
-          child: Container(),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            width: MediaQuery.of(context).size.width * 0.7,
+            height: MediaQuery.of(context).size.height * 0.3,
+            decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(50),
+                boxShadow: _isElevated
+                    ? [
+                        BoxShadow(
+                          color: Colors.grey[500]!,
+                          offset: const Offset(4, 4),
+                          blurRadius: 15,
+                          spreadRadius: 1,
+                        ),
+                        const BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-4, -4),
+                          blurRadius: 15,
+                          spreadRadius: 1,
+                        ),
+                      ]
+                    : null),
+          ),
         ),
       ),
     );

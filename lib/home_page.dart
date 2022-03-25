@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                 yazi: 'Neumorphism',
                 primary: Colors.green,
                 onprimary: Colors.white,
-                rota: '/glass',
+                rota: '/neumorp',
               ),
             ],
           ),
