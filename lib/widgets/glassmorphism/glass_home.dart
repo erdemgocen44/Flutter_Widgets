@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'glassmorphism.dart';
+
 class GlassHome extends StatefulWidget {
   final String title;
 
@@ -30,7 +32,14 @@ class _GlassHomeState extends State<GlassHome> {
                     _isBlur = !_isBlur;
                   });
                 },
-                child: GlassMorphism(),
+                child: GlassMorphism(
+                  blur: _isBlur ? 20 : 0,
+                  opacity: 0.2,
+                  child: SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.3,
+                    width: MediaQuery.of(context).size.width * 0.4,
+                  ),
+                ),
               ),
             ),
           ],

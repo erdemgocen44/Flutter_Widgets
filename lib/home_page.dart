@@ -30,6 +30,12 @@ class _HomePageState extends State<HomePage> {
                   onprimary: Colors.black,
                   rota: '/clippers',
                 ),
+                CustomElevatedButton(
+                  yazi: 'Glassmorphism',
+                  primary: Colors.red,
+                  onprimary: Colors.white,
+                  rota: '/glass',
+                ),
               ],
             ),
           ],

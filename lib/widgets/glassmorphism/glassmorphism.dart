@@ -22,6 +22,16 @@ class GlassMorphism extends StatelessWidget {
           sigmaX: blur,
           sigmaY: blur,
         ),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(opacity),
+            border: Border.all(
+              width: 1.5,
+              color: Colors.white.withOpacity(0.2),
+            ),
+          ),
+          child: child,
+        ),
       ),
     );
   }
