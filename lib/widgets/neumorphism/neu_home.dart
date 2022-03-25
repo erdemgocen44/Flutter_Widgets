@@ -22,6 +22,15 @@ class _NeumorpHomeState extends State<NeumorpHome> {
             });
           },
           child: AnimatedContainer(
+            child: const Text(
+              "Click!!!",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.red,
+              ),
+            ),
             duration: const Duration(milliseconds: 200),
             width: MediaQuery.of(context).size.width * 0.7,
             height: MediaQuery.of(context).size.height * 0.3,
