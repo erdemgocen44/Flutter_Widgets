@@ -17,7 +17,7 @@ class CustomElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(3.0),
       child: ElevatedButton(
         onPressed: () {
           Navigator.pushNamed(context, rota);
@@ -29,7 +29,7 @@ class CustomElevatedButton extends StatelessWidget {
             ),
         child: Text(
           yazi,
-          style: const TextStyle(fontSize: 20),
+          style: const TextStyle(fontSize: 12),
         ),
       ),
     );

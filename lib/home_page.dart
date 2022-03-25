@@ -13,34 +13,40 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Widgets'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                CustomElevatedButton(
-                  yazi: 'Clippers',
-                  primary: Colors.amber,
-                  onprimary: Colors.black,
-                  rota: '/clippers',
-                ),
-                CustomElevatedButton(
-                  yazi: 'Glassmorphism',
-                  primary: Colors.red,
-                  onprimary: Colors.white,
-                  rota: '/glass',
-                ),
-              ],
-            ),
-          ],
+        appBar: AppBar(
+          title: const Text('Widgets'),
         ),
-      ),
-    );
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: GridView(
+            primary: false,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              mainAxisSpacing: 4,
+              crossAxisSpacing: 4,
+              childAspectRatio: 2,
+            ),
+            children: [
+              CustomElevatedButton(
+                yazi: 'Clippers',
+                primary: Colors.amber,
+                onprimary: Colors.black,
+                rota: '/clippers',
+              ),
+              CustomElevatedButton(
+                yazi: 'Glassmorphism',
+                primary: Colors.red,
+                onprimary: Colors.white,
+                rota: '/glass',
+              ),
+              CustomElevatedButton(
+                yazi: 'Neumorphism',
+                primary: Colors.green,
+                onprimary: Colors.white,
+                rota: '/glass',
+              ),
+            ],
+          ),
+        ));
   }
 }
