@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'glassmorphism.dart';
 
 class GlassHome extends StatefulWidget {
-  final String title;
-
-  const GlassHome({Key? key, required this.title}) : super(key: key);
+  const GlassHome({Key? key}) : super(key: key);
 
   @override
   State<GlassHome> createState() => _GlassHomeState();
@@ -33,11 +31,20 @@ class _GlassHomeState extends State<GlassHome> {
                   });
                 },
                 child: GlassMorphism(
-                  blur: _isBlur ? 20 : 0,
-                  opacity: 0.2,
+                  blur: _isBlur ? 10 : 0,
+                  opacity: 0.5,
                   child: SizedBox(
+                    child: const Text(
+                      "Click!!!",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red,
+                      ),
+                    ),
                     height: MediaQuery.of(context).size.height * 0.3,
-                    width: MediaQuery.of(context).size.width * 0.4,
+                    width: MediaQuery.of(context).size.width * 0.8,
                   ),
                 ),
               ),
