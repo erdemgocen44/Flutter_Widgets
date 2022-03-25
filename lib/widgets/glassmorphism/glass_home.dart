@@ -18,7 +18,21 @@ class _GlassHomeState extends State<GlassHome> {
       body: Center(
         child: Stack(
           children: [
-            Image.network("https://picsum.photos/400/600"),
+            Image.network(
+              "https://picsum.photos/400/600",
+              fit: BoxFit.cover,
+              height: double.infinity,
+            ),
+            Center(
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _isBlur = !_isBlur;
+                  });
+                },
+                child: GlassMorphism(),
+              ),
+            ),
           ],
         ),
       ),
