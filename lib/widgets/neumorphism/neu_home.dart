@@ -31,7 +31,7 @@ class _NeumorpHomeState extends State<NeumorpHome> {
                 color: Colors.red,
               ),
             ),
-            duration: const Duration(milliseconds: 200),
+            duration: const Duration(milliseconds: 150),
             width: MediaQuery.of(context).size.width * 0.7,
             height: MediaQuery.of(context).size.height * 0.3,
             decoration: BoxDecoration(
