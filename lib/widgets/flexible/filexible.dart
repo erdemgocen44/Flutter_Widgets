@@ -18,7 +18,9 @@ class _FlexibleHomeState extends State<FlexibleHome> {
               //istersek flex koduyle expanded gibi değer verek büyüklüğünü ayarlayabiliriz
               //istersek height değeri vererek büyüklüğünü ayarlayabiliriz
               //yada flexfit ile ekrana yayabiliriz
+              //3 değeride kullandım.
               child: Container(
+                height: MediaQuery.of(context).size.height * 0.1,
                 color: Colors.blue,
               ),
             ),
@@ -29,7 +31,7 @@ class _FlexibleHomeState extends State<FlexibleHome> {
               ),
             ),
             Flexible(
-              fit: FlexFit.tight,
+              flex: 2,
               child: Container(
                 color: Colors.red,
               ),
