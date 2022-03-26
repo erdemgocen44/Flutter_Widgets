@@ -51,6 +51,12 @@ class _HomePageState extends State<HomePage> {
                 onprimary: Colors.white,
                 rota: '/flexible',
               ),
+              CustomElevatedButton(
+                yazi: 'Checkbox',
+                primary: Colors.blueGrey,
+                onprimary: Colors.black,
+                rota: '/checkbox',
+              ),
             ],
           ),
         ));
