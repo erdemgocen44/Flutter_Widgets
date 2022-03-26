@@ -20,8 +20,13 @@ class _CheckBoxListTilePageState extends State<CheckBoxListTilePage> {
             _isChecked = newValue;
           }),
           activeColor: Colors.orangeAccent,
-          checkColor: Colors.black,
-          controlAffinity: ListTileControlAffinity.leading,
+          checkColor: Colors.white,
+          controlAffinity: ListTileControlAffinity
+              .leading, //bu özellik checkbox ktusunun yerini değiştirir.örneğin leading başa alır....
+          tileColor: Colors
+              .black12, //bu özellik checkbox satırına renk verir. sanki container içinde gibi
+          tristate: true, //bu özellik sayesinde -- işaretide ekleyebilriz
+          subtitle: const Text("Subtitle", style: TextStyle(color: Colors.red)),
         ),
       ),
     );
