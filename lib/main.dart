@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
+import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/glassmorphism/glass_home.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'home_page.dart';
@@ -19,6 +20,7 @@ class Widgets extends StatelessWidget {
         "/clippers": (context) => const ClipperPage(),
         "/glass": (context) => const GlassHome(),
         "/neumorp": (context) => const NeumorpHome(),
+        "/flexible": (context) => const FlexibleHome(),
       },
     );
   }

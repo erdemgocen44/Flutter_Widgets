@@ -42,8 +42,14 @@ class _HomePageState extends State<HomePage> {
               CustomElevatedButton(
                 yazi: 'Neumorphism',
                 primary: Colors.green,
-                onprimary: Colors.white,
+                onprimary: Colors.black,
                 rota: '/neumorp',
+              ),
+              CustomElevatedButton(
+                yazi: 'Flexible',
+                primary: Colors.purple,
+                onprimary: Colors.white,
+                rota: '/flexible',
               ),
             ],
           ),
