@@ -10,6 +10,13 @@ class InteractiveViewerPage extends StatefulWidget {
 class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: InteractiveViewer(
+          maxScale: 5,
+          child: Image.network("https://picsum.photos/500/300"),
+        ),
+      ),
+    );
   }
 }

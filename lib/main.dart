@@ -4,6 +4,7 @@ import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
 import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/glassmorphism/glass_home.dart';
+import 'package:widgets/widgets/intractive_viewer/interactive_viewer.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'home_page.dart';
 
@@ -25,6 +26,7 @@ class Widgets extends StatelessWidget {
         "/flexible": (context) => const FlexibleHome(),
         "/checkbox": (context) => const CheckBoxListTilePage(),
         "/cliprrect": (context) => const ClipRRectPage(),
+        "/viewer": (context) => const InteractiveViewerPage(),
       },
     );
   }
