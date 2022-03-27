@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
+import 'package:widgets/widgets/cliprrect/cliprrect.dart';
 import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/glassmorphism/glass_home.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
@@ -23,6 +24,7 @@ class Widgets extends StatelessWidget {
         "/neumorp": (context) => const NeumorpHome(),
         "/flexible": (context) => const FlexibleHome(),
         "/checkbox": (context) => const CheckBoxListTilePage(),
+        "/cliprrect": (context) => const ClipRRectPage(),
       },
     );
   }

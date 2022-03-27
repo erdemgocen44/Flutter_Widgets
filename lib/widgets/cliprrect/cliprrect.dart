@@ -12,7 +12,14 @@ class _ClipRRectPageState extends State<ClipRRectPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.network("https://picsum.photos/500/200"),
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: ClipRRect(
+              //bu widget sayesinde resimlerin kenarlarına radius verebiliyoruz.Containere koymaya gerek kalmadan.
+              // buna benzer olarak ClipOval (kenarları yuvarlatan)ve ClipPath (6gen yapan)....
+              borderRadius: BorderRadius.circular(30),
+              child: Image.network("https://picsum.photos/500/300")),
+        ),
       ),
     );
   }

@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
               CustomElevatedButton(
                 yazi: 'ClipRRect',
                 primary: Colors.blue,
-                onprimary: Colors.black,
+                onprimary: Colors.white,
                 rota: '/cliprrect',
               ),
             ],
