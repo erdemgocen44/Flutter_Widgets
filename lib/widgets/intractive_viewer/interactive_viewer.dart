@@ -14,6 +14,7 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
       body: Center(
         child: InteractiveViewer(
           //bu widget sayesinde eklediğimiz resimlere zoom yapabiliriz
+          //İSTERSEK zomm için sınırlama koyabiliriz...
           maxScale: 5,
           child: Image.network("https://picsum.photos/500/300"),
         ),
