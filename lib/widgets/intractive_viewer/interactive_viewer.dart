@@ -13,6 +13,7 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
     return Scaffold(
       body: Center(
         child: InteractiveViewer(
+          //bu widget sayesinde eklediğimiz resimlere zoom yapabiliriz
           maxScale: 5,
           child: Image.network("https://picsum.photos/500/300"),
         ),
