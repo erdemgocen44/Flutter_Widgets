@@ -9,7 +9,7 @@ class SelectablePage extends StatefulWidget {
 
 class _SelectablePageState extends State<SelectablePage> {
   String selectedText = "";
-  final String _selectableText = "This is selectable text!!!";
+  final String _selectableText = "Lütfen bu texti seçiniz!!!";
   final TextStyle _styleBlue = const TextStyle(
     fontSize: 25,
     fontWeight: FontWeight.bold,
