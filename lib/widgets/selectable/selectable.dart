@@ -27,7 +27,21 @@ class _SelectablePageState extends State<SelectablePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            SelectableText(_selectableText),
+            Text(selectedText, style: _styleBlue),
+            TextSelectionTheme(
+              data: const TextSelectionThemeData(
+                  selectionColor: Colors.amberAccent),
+              child: SelectableText(
+                _selectableText,
+                style: _style,
+                onSelectionChanged: (selection, cause) {
+                  setState(() {
+                    selectedText = _selectableText.substring(
+                        selection.start, selection.end);
+                  });
+                },
+              ),
+            ),
           ],
         ),
       ),
