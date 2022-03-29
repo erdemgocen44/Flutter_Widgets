@@ -6,6 +6,7 @@ import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/glassmorphism/glass_home.dart';
 import 'package:widgets/widgets/intractive_viewer/interactive_viewer.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
+import 'package:widgets/widgets/selectable/selectable.dart';
 import 'home_page.dart';
 
 void main() => runApp(Widgets());
@@ -27,6 +28,7 @@ class Widgets extends StatelessWidget {
         "/checkbox": (context) => const CheckBoxListTilePage(),
         "/cliprrect": (context) => const ClipRRectPage(),
         "/viewer": (context) => const InteractiveViewerPage(),
+        "/selectable": (context) => const SelectablePage(),
       },
     );
   }
