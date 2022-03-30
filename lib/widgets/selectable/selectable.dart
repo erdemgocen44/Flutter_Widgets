@@ -31,7 +31,7 @@ class _SelectablePageState extends State<SelectablePage> {
             TextSelectionTheme(
               data: const TextSelectionThemeData(
                   selectionColor: Colors.amberAccent),
-              child: SelectableText(
+              child: SelectableText(//bu widget sayesinde uygulamaya eklediğimiz textler seçilebilir olur.
                 _selectableText,
                 style: _style,
                 onSelectionChanged: (selection, cause) {
