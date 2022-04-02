@@ -23,15 +23,33 @@ class Widgets extends StatelessWidget {
       home: HomePage(),
       routes: {
         "/home": (context) => HomePage(),
-        "/clippers": (context) => const ClipperPage(),
-        "/glass": (context) => const GlassHome(),
-        "/neumorp": (context) => const NeumorpHome(),
-        "/flexible": (context) => const FlexibleHome(),
-        "/checkbox": (context) => const CheckBoxListTilePage(),
-        "/cliprrect": (context) => const ClipRRectPage(),
-        "/viewer": (context) => const InteractiveViewerPage(),
-        "/selectable": (context) => const SelectablePage(),
-        "/alert": (context) => const AlertDialogHome(),
+        "/clippers": (context) => const ClipperPage(
+              title: 'Clippers',
+            ),
+        "/glass": (context) => const GlassHome(
+              title: 'GlassMorphism',
+            ),
+        "/neumorp": (context) => const NeumorpHome(
+              title: 'NeuMorphism',
+            ),
+        "/flexible": (context) => const FlexibleHome(
+              title: 'Flexible',
+            ),
+        "/checkbox": (context) => const CheckBoxListTilePage(
+              title: 'CheckBox',
+            ),
+        "/cliprrect": (context) => const ClipRRectPage(
+              title: 'ClipRRect',
+            ),
+        "/viewer": (context) => const InteractiveViewerPage(
+              title: 'Viewer',
+            ),
+        "/selectable": (context) => const SelectablePage(
+              title: 'Selectable',
+            ),
+        "/alert": (context) => const AlertDialogHome(
+              title: 'AlertDialog',
+            ),
         "/spread": (context) => const SpreadOperatorHome(
               title: 'SpreadOperator',
             ),

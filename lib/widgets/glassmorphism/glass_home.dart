@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'glassmorphism.dart';
 
 class GlassHome extends StatefulWidget {
-  const GlassHome({Key? key}) : super(key: key);
-
+  const GlassHome({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<GlassHome> createState() => _GlassHomeState();
 }
@@ -14,6 +14,9 @@ class _GlassHomeState extends State<GlassHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       backgroundColor: Colors.grey[300],
       body: Center(
         child: Stack(

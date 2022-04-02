@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class NeumorpHome extends StatefulWidget {
-  const NeumorpHome({Key? key}) : super(key: key);
-
+  const NeumorpHome({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<NeumorpHome> createState() => _NeumorpHomeState();
 }
@@ -13,6 +13,9 @@ class _NeumorpHomeState extends State<NeumorpHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       backgroundColor: Colors.grey[300],
       body: Center(
         child: GestureDetector(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AlertDialogHome extends StatefulWidget {
-  const AlertDialogHome({Key? key}) : super(key: key);
-
+  const AlertDialogHome({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<AlertDialogHome> createState() => _AlertDialogHomeState();
 }
@@ -11,6 +11,9 @@ class _AlertDialogHomeState extends State<AlertDialogHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       body: Center(
         child: ElevatedButton(
           child: const Text(

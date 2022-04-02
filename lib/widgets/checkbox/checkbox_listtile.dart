@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CheckBoxListTilePage extends StatefulWidget {
-  const CheckBoxListTilePage({Key? key}) : super(key: key);
-
+  const CheckBoxListTilePage({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<CheckBoxListTilePage> createState() => _CheckBoxListTilePageState();
 }
@@ -12,6 +12,9 @@ class _CheckBoxListTilePageState extends State<CheckBoxListTilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       body: Center(
         child: CheckboxListTile(
           title: const Text("Checkbox List Tile Try"),

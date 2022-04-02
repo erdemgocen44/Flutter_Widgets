@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FlexibleHome extends StatefulWidget {
-  const FlexibleHome({Key? key}) : super(key: key);
-
+  const FlexibleHome({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<FlexibleHome> createState() => _FlexibleHomeState();
 }
@@ -11,6 +11,9 @@ class _FlexibleHomeState extends State<FlexibleHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       body: Center(
         child: Column(
           children: [
