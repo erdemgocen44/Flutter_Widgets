@@ -12,8 +12,16 @@ class _SpreadOperatorHomeState extends State<SpreadOperatorHome> {
   Widget build(BuildContext context) {
     List<Widget> imagesList = [
       Image.network(
-        "https://picsum.photos/500/600",
-        height: MediaQuery.of(context).size.height * 0.02,
+        "https://picsum.photos/200/300",
+        height: MediaQuery.of(context).size.height * 0.1,
+      ),
+      Image.network(
+        "https://picsum.photos/200/300",
+        height: MediaQuery.of(context).size.height * 0.1,
+      ),
+      Image.network(
+        "https://picsum.photos/200/300",
+        height: MediaQuery.of(context).size.height * 0.1,
       ),
     ];
     return Scaffold(
@@ -22,10 +30,13 @@ class _SpreadOperatorHomeState extends State<SpreadOperatorHome> {
           widget.title,
         ),
       ),
-      body: Column(
-        children: [
-          Image.network("https://picsum.photos/500/600"),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            Image.network("https://picsum.photos/200/300"),
+            ...imagesList //buraya 3 nokta koyarak List e eklediğimiz tüm elemanları buraya ekleyebiliyoruz...
+          ],
+        ),
       ),
     );
   }
