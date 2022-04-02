@@ -23,8 +23,16 @@ class _AlertDialogHomeState extends State<AlertDialogHome> {
                   child: const Text("Close"),
                 )
               ],
-              title: const Text("Flutter is Life!!"),
+              title: const Text(
+                "Flutter is Life!!",
+                textAlign: TextAlign.center,
+              ),
               elevation: 15,
+              contentPadding: const EdgeInsets.all(20),
+              content: const Text(
+                "This is the alert dialog!!",
+                textAlign: TextAlign.center,
+              ),
             ),
           ),
         ),
