@@ -13,14 +13,14 @@ class _AlertDialogHomeState extends State<AlertDialogHome> {
     return Scaffold(
       body: Center(
         child: ElevatedButton(
-          child: Text("Show Alert Dialog"),
+          child: const Text("Show Alert Dialog"),
           onPressed: () => showDialog(
               context: context,
               builder: (context) => AlertDialog(
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.of(context).pop(),
-                        child: Text("Close"),
+                        child: const Text("Close"),
                       )
                     ],
                   )),
