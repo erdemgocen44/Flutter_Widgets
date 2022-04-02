@@ -15,15 +15,18 @@ class _AlertDialogHomeState extends State<AlertDialogHome> {
         child: ElevatedButton(
           child: const Text("Show Alert Dialog"),
           onPressed: () => showDialog(
-              context: context,
-              builder: (context) => AlertDialog(
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.of(context).pop(),
-                        child: const Text("Close"),
-                      )
-                    ],
-                  )),
+            context: context,
+            builder: (context) => AlertDialog(
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text("Close"),
+                )
+              ],
+              title: const Text("Flutter is Life!!"),
+              elevation: 15,
+            ),
+          ),
         ),
       ),
     );

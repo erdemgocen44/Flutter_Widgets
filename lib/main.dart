@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/widgets/alert_dialog/alert_dialog.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
@@ -29,6 +30,7 @@ class Widgets extends StatelessWidget {
         "/cliprrect": (context) => const ClipRRectPage(),
         "/viewer": (context) => const InteractiveViewerPage(),
         "/selectable": (context) => const SelectablePage(),
+        "/alert": (context) => const AlertDialogHome(),
       },
     );
   }

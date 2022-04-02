@@ -75,6 +75,12 @@ class _HomePageState extends State<HomePage> {
                 onprimary: Colors.white,
                 rota: '/selectable',
               ),
+              CustomElevatedButton(
+                yazi: 'AlertDialog',
+                primary: Colors.purpleAccent,
+                onprimary: Colors.black,
+                rota: '/alert',
+              ),
             ],
           ),
         ));
