@@ -81,6 +81,12 @@ class _HomePageState extends State<HomePage> {
                 onprimary: Colors.black,
                 rota: '/alert',
               ),
+              CustomElevatedButton(
+                yazi: 'SpreadOperator',
+                primary: Colors.black87,
+                onprimary: Colors.white,
+                rota: '/spread',
+              ),
             ],
           ),
         ));
