@@ -14,6 +14,10 @@ class _VisibilityHomeState extends State<VisibilityHome> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      body: const SizedBox(
+        width: double.infinity,
+        child: Center(),
+      ),
     );
   }
 }
