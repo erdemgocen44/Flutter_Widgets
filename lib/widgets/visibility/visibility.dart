@@ -14,6 +14,17 @@ class _VisibilityHomeState extends State<VisibilityHome> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        actions: [
+          TextButton(
+            onPressed: () => setState(() {
+              _isVisible = !_isVisible;
+            }),
+            child: const Text(
+              "Switch",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ],
       ),
       body: SizedBox(
         width: double.infinity,
