@@ -9,6 +9,7 @@ import 'package:widgets/widgets/intractive_viewer/interactive_viewer.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
 import 'package:widgets/widgets/spread_operator/spread_operator.dart';
+import 'package:widgets/widgets/visibility/visibility.dart';
 import 'home_page.dart';
 
 void main() => runApp(Widgets());
@@ -52,6 +53,9 @@ class Widgets extends StatelessWidget {
             ),
         "/spread": (context) => const SpreadOperatorHome(
               title: 'SpreadOperator',
+            ),
+        "/visibility": (context) => const VisibilityHome(
+              title: 'Visibility',
             ),
       },
     );
