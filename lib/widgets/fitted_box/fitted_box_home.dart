@@ -16,14 +16,19 @@ class _FittedBoxHomeState extends State<FittedBoxHome> {
       ),
       body: Center(
         child: Container(
-          width: MediaQuery.of(context).size.width * 0.7,
+          width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.4,
           color: Colors.redAccent,
-          padding: EdgeInsets.all(10),
-          child: const Text(
-            "Flutter c'est super!",
-            style: TextStyle(
-              fontSize: 100,
+          padding: const EdgeInsets.all(10),
+          child: const FittedBox(
+            //Text widgetı FittedBox ile sardığımızda ne olursa olsun containere uyduruyor.
+            //istersek fontu 100 yapalım farketmez
+            child: Text(
+              "Flutter c'est super!",
+              style: TextStyle(
+                  fontSize: 100,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
             ),
           ),
         ),
