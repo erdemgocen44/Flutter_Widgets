@@ -74,4 +74,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/positioned',
   ),
+  CustomElevatedButton(
+    yazi: 'FittedBox',
+    primary: Colors.brown,
+    onprimary: Colors.black,
+    rota: '/fitted',
+  ),
 ];
