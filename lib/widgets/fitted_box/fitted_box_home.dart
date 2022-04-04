@@ -14,7 +14,20 @@ class _FittedBoxHomeState extends State<FittedBoxHome> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(),
+      body: Center(
+        child: Container(
+          width: MediaQuery.of(context).size.width * 0.7,
+          height: MediaQuery.of(context).size.height * 0.4,
+          color: Colors.redAccent,
+          padding: EdgeInsets.all(10),
+          child: const Text(
+            "Flutter c'est super!",
+            style: TextStyle(
+              fontSize: 100,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
