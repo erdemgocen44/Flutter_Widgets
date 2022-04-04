@@ -22,7 +22,8 @@ class _FittedBoxHomeState extends State<FittedBoxHome> {
           padding: const EdgeInsets.all(10),
           child: const FittedBox(
             //Text widgetı FittedBox ile sardığımızda ne olursa olsun containere uyduruyor.
-            //istersek fontu 100 yapalım farketmez
+            //istersek fontu 100 yapalım farketmez,yada containereın height yada witdh
+            //containren buyuklugune gore içindekini sığdırıyo
             child: Text(
               "Flutter c'est super!",
               style: TextStyle(
