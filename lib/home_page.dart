@@ -93,6 +93,12 @@ class _HomePageState extends State<HomePage> {
                 onprimary: Colors.black,
                 rota: '/visibility',
               ),
+              CustomElevatedButton(
+                yazi: 'Positioned',
+                primary: Colors.indigo,
+                onprimary: Colors.white,
+                rota: '/positioned',
+              ),
             ],
           ),
         ));
