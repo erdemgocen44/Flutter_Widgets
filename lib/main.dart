@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/rotes.dart';
 import 'package:widgets/widgets/alert_dialog/alert_dialog.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
@@ -22,42 +23,7 @@ class Widgets extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
-      routes: {
-        "/home": (context) => HomePage(),
-        "/clippers": (context) => const ClipperPage(
-              title: 'Clippers',
-            ),
-        "/glass": (context) => const GlassHome(
-              title: 'GlassMorphism',
-            ),
-        "/neumorp": (context) => const NeumorpHome(
-              title: 'NeuMorphism',
-            ),
-        "/flexible": (context) => const FlexibleHome(
-              title: 'Flexible',
-            ),
-        "/checkbox": (context) => const CheckBoxListTilePage(
-              title: 'CheckBox',
-            ),
-        "/cliprrect": (context) => const ClipRRectPage(
-              title: 'ClipRRect',
-            ),
-        "/viewer": (context) => const InteractiveViewerPage(
-              title: 'Viewer',
-            ),
-        "/selectable": (context) => const SelectablePage(
-              title: 'Selectable',
-            ),
-        "/alert": (context) => const AlertDialogHome(
-              title: 'AlertDialog',
-            ),
-        "/spread": (context) => const SpreadOperatorHome(
-              title: 'SpreadOperator',
-            ),
-        "/visibility": (context) => const VisibilityHome(
-              title: 'Visibility',
-            ),
-      },
+      routes: rotalar,
     );
   }
 }

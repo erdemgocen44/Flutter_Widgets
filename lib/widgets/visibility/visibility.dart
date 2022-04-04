@@ -39,7 +39,7 @@ class _VisibilityHomeState extends State<VisibilityHome> {
               Visibility(
                 visible: _isVisible,
                 child: Image.network(
-                  "https://picsum.photos/300/400",
+                  "https://picsum.photos/500/600",
                   height: MediaQuery.of(context).size.height * 0.2,
                 ),
               ),
