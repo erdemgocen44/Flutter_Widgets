@@ -20,12 +20,17 @@ class _PositionedHomeState extends State<PositionedHome> {
             Positioned(
               left: 40,
               top: 40,
-              child: Image.network("https://picsum.photos/200/300"),
+              child: Image.network("https://picsum.photos/200/100"),
             ),
             Positioned(
               left: 80,
               top: 80,
-              child: Image.network("https://picsum.photos/200/300"),
+              child: Image.network("https://picsum.photos/200/100"),
+            ),
+            Positioned(
+              left: 120,
+              top: 120,
+              child: Image.network("https://picsum.photos/200/100"),
             ),
           ],
         ),
