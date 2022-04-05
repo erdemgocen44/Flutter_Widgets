@@ -12,7 +12,7 @@ import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'package:widgets/widgets/positioned/positioned_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
 import 'package:widgets/widgets/spread_operator/spread_operator.dart';
-import 'package:widgets/widgets/stack/stack_home.dart';
+import 'package:widgets/widgets/stackhome/stack_home.dart';
 import 'package:widgets/widgets/visibility/visibility.dart';
 
 var rotalar = <String, WidgetBuilder>{
