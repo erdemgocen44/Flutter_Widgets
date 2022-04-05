@@ -80,4 +80,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/fitted',
   ),
+  CustomElevatedButton(
+    yazi: 'Stack',
+    primary: Colors.blueAccent,
+    onprimary: Colors.white,
+    rota: '/stack',
+  ),
 ];

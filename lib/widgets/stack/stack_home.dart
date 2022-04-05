@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StackHome extends StatefulWidget {
-  const StackHome({Key? key}) : super(key: key);
+  const StackHome({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
