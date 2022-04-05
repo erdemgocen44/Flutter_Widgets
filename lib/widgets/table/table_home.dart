@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class TableHome extends StatefulWidget {
@@ -29,6 +31,21 @@ class _TableHomeState extends State<TableHome> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+      ),
+      body: Center(
+        child: Table(
+          defaultVerticalAlignment: TableCellVerticalAlignment.bottom,
+          border: TableBorder.all(),
+          defaultColumnWidth: const FixedColumnWidth(100.0),
+          textDirection: TextDirection.rtl,
+          children: <TableRow>[
+            _tableRow,
+            _tableRow,
+            _tableRow,
+            _tableRow,
+            _tableRow,
+          ],
+        ),
       ),
     );
   }
