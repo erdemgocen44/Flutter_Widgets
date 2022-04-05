@@ -10,6 +10,22 @@ class TableHome extends StatefulWidget {
 class _TableHomeState extends State<TableHome> {
   @override
   Widget build(BuildContext context) {
+    TableRow _tableRow = const TableRow(
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(10.0),
+          child: Text("Cell 1"),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10.0),
+          child: Text("Cell 2"),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10.0),
+          child: Text("Cell 3"),
+        ),
+      ],
+    );
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
