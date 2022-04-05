@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 class StackHome extends StatefulWidget {
   const StackHome({Key? key, required this.title}) : super(key: key);
@@ -14,6 +15,21 @@ class _StackHomeState extends State<StackHome> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+      ),
+      body: Center(
+        child: Stack(
+          children: [
+            Center(
+              child: Image.network(resim400),
+            ),
+            Center(
+              child: Image.network(
+                resim200,
+                width: 100,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
