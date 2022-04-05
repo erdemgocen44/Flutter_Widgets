@@ -13,6 +13,7 @@ import 'package:widgets/widgets/positioned/positioned_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
 import 'package:widgets/widgets/spread_operator/spread_operator.dart';
 import 'package:widgets/widgets/stackhome/stack_home.dart';
+import 'package:widgets/widgets/table/table_home.dart';
 import 'package:widgets/widgets/visibility/visibility.dart';
 
 var rotalar = <String, WidgetBuilder>{
@@ -58,5 +59,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/stack": (context) => const StackHome(
         title: 'Stack',
+      ),
+  "/table": (context) => const TableHome(
+        title: 'Table',
       ),
 };
