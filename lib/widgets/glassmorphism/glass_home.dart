@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 import 'glassmorphism.dart';
 
@@ -22,7 +23,7 @@ class _GlassHomeState extends State<GlassHome> {
         child: Stack(
           children: [
             Image.network(
-              "https://picsum.photos/400/600",
+              resim400,
               fit: BoxFit.cover,
               height: double.infinity,
             ),

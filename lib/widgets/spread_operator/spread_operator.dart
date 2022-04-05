@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 class SpreadOperatorHome extends StatefulWidget {
   const SpreadOperatorHome({Key? key, required this.title}) : super(key: key);
@@ -12,15 +13,15 @@ class _SpreadOperatorHomeState extends State<SpreadOperatorHome> {
   Widget build(BuildContext context) {
     List<Widget> imagesList = [
       Image.network(
-        "https://picsum.photos/200/300",
+        resim200,
         height: MediaQuery.of(context).size.height * 0.1,
       ),
       Image.network(
-        "https://picsum.photos/200/300",
+        resim200,
         height: MediaQuery.of(context).size.height * 0.1,
       ),
       Image.network(
-        "https://picsum.photos/200/300",
+        resim200,
         height: MediaQuery.of(context).size.height * 0.1,
       ),
     ];
@@ -33,7 +34,7 @@ class _SpreadOperatorHomeState extends State<SpreadOperatorHome> {
       body: Center(
         child: Column(
           children: [
-            Image.network("https://picsum.photos/200/300"),
+            Image.network(resim200),
             ...imagesList //buraya 3 nokta koyarak List e eklediğimiz tüm elemanları buraya ekleyebiliyoruz...
           ],
         ),

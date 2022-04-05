@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 class ClipRRectPage extends StatefulWidget {
   const ClipRRectPage({Key? key, required this.title}) : super(key: key);
@@ -21,7 +22,7 @@ class _ClipRRectPageState extends State<ClipRRectPage> {
               //bu widget sayesinde resimlerin kenarlarına radius verebiliyoruz.Containere koymaya gerek kalmadan.
               // buna benzer olarak ClipOval (kenarları yuvarlatan)ve ClipPath (6gen yapan)....
               borderRadius: BorderRadius.circular(30),
-              child: Image.network("https://picsum.photos/500/300")),
+              child: Image.network(resim300)),
         ),
       ),
     );

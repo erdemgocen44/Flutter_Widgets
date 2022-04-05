@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 class PositionedHome extends StatefulWidget {
   const PositionedHome({Key? key, required this.title}) : super(key: key);
@@ -20,17 +21,17 @@ class _PositionedHomeState extends State<PositionedHome> {
             Positioned(
               left: 40,
               top: 40,
-              child: Image.network("https://picsum.photos/200/100"),
+              child: Image.network(resim200),
             ),
             Positioned(
               left: 80,
               top: 80,
-              child: Image.network("https://picsum.photos/200/100"),
+              child: Image.network(resim200),
             ),
             Positioned(
               left: 120,
               top: 120,
-              child: Image.network("https://picsum.photos/200/100"),
+              child: Image.network(resim200),
             ),
           ],
         ),

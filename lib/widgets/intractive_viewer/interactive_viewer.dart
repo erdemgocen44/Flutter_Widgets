@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 class InteractiveViewerPage extends StatefulWidget {
   const InteractiveViewerPage({Key? key, required this.title})
@@ -20,7 +21,7 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
           //bu widget sayesinde eklediğimiz resimlere zoom yapabiliriz
           //İSTERSEK zoom için sınırlama koyabiliriz...
           maxScale: 5,
-          child: Image.network("https://picsum.photos/500/300"),
+          child: Image.network(resim500),
         ),
       ),
     );
