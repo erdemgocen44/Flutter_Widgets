@@ -18,6 +18,7 @@ class _AdaptiveHomeState extends State<AdaptiveHome> {
         child: Column(
           children: [
             Slider.adaptive(
+              //bu özell,k sayesinde yaptığımız widgetlar hem ios da hemde androide sorunsuz aynı şekilde çalısacak.
               onChanged: (double newValue) {},
               value: 1,
             ),
