@@ -10,6 +10,31 @@ class AdaptiveHome extends StatefulWidget {
 class _AdaptiveHomeState extends State<AdaptiveHome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Slider.adaptive(
+              onChanged: (double newValue) {},
+              value: 1,
+            ),
+            SwitchListTile.adaptive(
+              title: const Text("Switch List Tile"),
+              value: true,
+              onChanged: (bool newValue) {},
+            ),
+            Switch(
+              value: true,
+              onChanged: (bool newValue) {},
+            ),
+            Icon(Icons.adaptive.share),
+            const CircularProgressIndicator.adaptive(),
+          ],
+        ),
+      ),
+    );
   }
 }
