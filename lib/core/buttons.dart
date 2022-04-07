@@ -92,4 +92,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/table',
   ),
+  CustomElevatedButton(
+    yazi: 'Adaptive',
+    primary: Colors.blueGrey,
+    onprimary: Colors.white,
+    rota: '/adaptive',
+  ),
 ];

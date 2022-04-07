@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/home_page.dart';
+import 'package:widgets/widgets/adaptive/adaptive_home.dart';
 import 'package:widgets/widgets/alert_dialog/alert_dialog.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
@@ -62,5 +63,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/table": (context) => const TableHome(
         title: 'Table',
+      ),
+  "/adaptive": (context) => const AdaptiveHome(
+        title: 'Adaptive',
       ),
 };
