@@ -12,6 +12,7 @@ class _SpacerHomeState extends State<SpacerHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        //bu widget sayesinde ikiwidget arasında mümkün olduğunca fazla boşluk bırakmamıza izin verecek
         title: Text(widget.title),
       ),
     );

@@ -12,6 +12,7 @@ import 'package:widgets/widgets/intractive_viewer/interactive_viewer.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'package:widgets/widgets/positioned/positioned_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
+import 'package:widgets/widgets/spacer/spacer_home.dart';
 import 'package:widgets/widgets/spread_operator/spread_operator.dart';
 import 'package:widgets/widgets/stackhome/stack_home.dart';
 import 'package:widgets/widgets/table/table_home.dart';
@@ -66,5 +67,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/adaptive": (context) => const AdaptiveHome(
         title: 'Adaptive',
+      ),
+  "/spacer": (context) => const SpacerHome(
+        title: 'Spacer',
       ),
 };

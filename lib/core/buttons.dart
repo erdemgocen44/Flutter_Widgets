@@ -98,4 +98,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/adaptive',
   ),
+  CustomElevatedButton(
+    yazi: 'Spacer',
+    primary: Colors.blueGrey,
+    onprimary: Colors.white,
+    rota: '/spacer',
+  ),
 ];
