@@ -14,11 +14,11 @@ class _AdaptiveHomeState extends State<AdaptiveHome> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+              //bu özellik sayesinde yaptığımız widgetlar hem ios da hemde androide sorunsuz aynı şekilde çalısacak.
       body: Center(
         child: Column(
           children: [
             Slider.adaptive(
-              //bu özell,k sayesinde yaptığımız widgetlar hem ios da hemde androide sorunsuz aynı şekilde çalısacak.
               onChanged: (double newValue) {},
               value: 1,
             ),
