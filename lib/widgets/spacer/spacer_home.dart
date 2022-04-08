@@ -15,6 +15,26 @@ class _SpacerHomeState extends State<SpacerHome> {
         //bu widget sayesinde ikiwidget arasında mümkün olduğunca fazla boşluk bırakmamıza izin verecek
         title: Text(widget.title),
       ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height * 0.15,
+              color: Colors.blueAccent,
+            ),
+            const Spacer(),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.15,
+              color: Colors.orangeAccent,
+            ),
+            const Spacer(),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.15,
+              color: Colors.redAccent,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
