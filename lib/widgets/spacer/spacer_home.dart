@@ -22,12 +22,17 @@ class _SpacerHomeState extends State<SpacerHome> {
               height: MediaQuery.of(context).size.height * 0.15,
               color: Colors.blueAccent,
             ),
-            const Spacer(),
+            const Spacer(
+              flex:
+                  1, //bu sayede aralarına verdiğimiz boşluğun derecesini de ayarlayabiliriz....
+            ),
             Container(
               height: MediaQuery.of(context).size.height * 0.15,
               color: Colors.orangeAccent,
             ),
-            const Spacer(),
+            const Spacer(
+              flex: 2,
+            ),
             Container(
               height: MediaQuery.of(context).size.height * 0.15,
               color: Colors.redAccent,
