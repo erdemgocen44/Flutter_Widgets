@@ -14,6 +14,7 @@ Stream<int> generateStream = (() async* {
   yield 1;
   await Future<void>.delayed(const Duration(seconds: 1));
   yield 2;
+
   await Future<void>.delayed(const Duration(seconds: 1));
   yield 3;
 })();
@@ -35,11 +36,11 @@ class _StreamBuilderHomeState extends State<StreamBuilderHome> {
             }
 
             if (snapshot.hasError) {
-              return Text("Error !!!");
+              return const Text("Error !!!");
             } else {
               return Text(
                 snapshot.data.toString(),
-                style: TextStyle(fontSize: 40, color: Colors.redAccent),
+                style: const TextStyle(fontSize: 50, color: Colors.redAccent),
               );
             }
           },
