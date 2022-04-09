@@ -21,6 +21,30 @@ Stream<int> generateStream = (() async* {
 class _StreamBuilderHomeState extends State<StreamBuilderHome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: StreamBuilder(
+          stream: generateStream,
+          initialData: 0,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const CircularProgressIndicator.adaptive();
+            }
+
+            if (snapshot.hasError) {
+              return Text("Error !!!");
+            } else {
+              return Text(
+                snapshot.data.toString(),
+                style: TextStyle(fontSize: 40, color: Colors.redAccent),
+              );
+            }
+          },
+        ),
+      ),
+    );
   }
 }
