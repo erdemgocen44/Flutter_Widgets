@@ -14,7 +14,7 @@ Stream<int> generateStream = (() async* {
   yield 1;
   await Future<void>.delayed(const Duration(seconds: 1));
   yield 2;
-
+  //bu noktaya istersek throw atabiliriz....
   await Future<void>.delayed(const Duration(seconds: 1));
   yield 3;
 })();
