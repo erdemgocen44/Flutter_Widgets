@@ -7,6 +7,17 @@ class StreamBuilderHome extends StatefulWidget {
   State<StreamBuilderHome> createState() => _StreamBuilderHomeState();
 }
 
+//Fake FireBase Sistemi kuralım...
+
+Stream<int> generateStream = (() async* {
+  await Future<void>.delayed(const Duration(seconds: 2));
+  yield 1;
+  await Future<void>.delayed(const Duration(seconds: 1));
+  yield 2;
+  await Future<void>.delayed(const Duration(seconds: 1));
+  yield 3;
+})();
+
 class _StreamBuilderHomeState extends State<StreamBuilderHome> {
   @override
   Widget build(BuildContext context) {
