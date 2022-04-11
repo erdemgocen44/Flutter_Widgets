@@ -21,7 +21,7 @@ class _FutureHomeState extends State<FutureHome> {
           ),
           onPressed: () async {
             //eğer bu kısma async koyar ve alta await eklersek 1.task çalıştıktan sonra 2ye geçer ve orada 3 saniye bekledikten sonra 3.taska geçer
-            print("1. task");
+            print("1. task ");
             //network request to get current weather
             final weather = await getData();
             //   await Future.delayed(const Duration(seconds: 3), () {
