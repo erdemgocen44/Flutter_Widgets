@@ -7,6 +7,7 @@ import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
 import 'package:widgets/widgets/fitted_box/fitted_box_home.dart';
 import 'package:widgets/widgets/flexible/filexible.dart';
+import 'package:widgets/widgets/futures/futures_home.dart';
 import 'package:widgets/widgets/glassmorphism/glass_home.dart';
 import 'package:widgets/widgets/intractive_viewer/interactive_viewer.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
@@ -74,5 +75,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/stream": (context) => const StreamBuilderHome(
         title: 'StreamBuilder',
+      ),
+  "/future": (context) => const FutureHome(
+        title: 'Future',
       ),
 };
