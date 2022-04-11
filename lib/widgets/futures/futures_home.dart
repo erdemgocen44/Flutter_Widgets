@@ -16,12 +16,15 @@ class _FutureHomeState extends State<FutureHome> {
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text(
+          child: const Text(
             "Get Data!!!",
           ),
           onPressed: () {
             print("1. task");
-            print("2. task");
+            //network request to get current weather
+            Future.delayed(const Duration(seconds: 3), () {
+              print("2. Weather: Sunny");
+            });
             print("3. task");
           },
         ),
