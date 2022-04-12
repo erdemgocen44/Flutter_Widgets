@@ -9,12 +9,18 @@ class StreamBuilderHome2 extends StatefulWidget {
 }
 
 class _StreamBuilderHome2State extends State<StreamBuilderHome2> {
+  Future<int?> getNumber() async {
+    await Future.delayed(const Duration(seconds: 4));
+    return 1;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      body: Center(),
     );
   }
 }

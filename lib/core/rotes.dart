@@ -17,6 +17,7 @@ import 'package:widgets/widgets/spacer/spacer_home.dart';
 import 'package:widgets/widgets/spread_operator/spread_operator.dart';
 import 'package:widgets/widgets/stackhome/stack_home.dart';
 import 'package:widgets/widgets/stream_builder/stream_builder_home.dart';
+import 'package:widgets/widgets/stream_builder2/stream_builder_home_2.dart';
 import 'package:widgets/widgets/table/table_home.dart';
 import 'package:widgets/widgets/visibility/visibility.dart';
 
@@ -75,6 +76,9 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/stream": (context) => const StreamBuilderHome(
         title: 'StreamBuilder',
+      ),
+  "/stream2": (context) => const StreamBuilderHome2(
+        title: 'StreamBuilder2',
       ),
   "/future": (context) => const FutureHome(
         title: 'Future',
