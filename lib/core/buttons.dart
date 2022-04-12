@@ -113,13 +113,13 @@ List<Widget> buttons = [
   CustomElevatedButton(
     yazi: 'StreamBuilder',
     primary: Colors.cyan,
-    onprimary: Colors.white,
+    onprimary: Colors.black,
     rota: '/stream',
   ),
   CustomElevatedButton(
     yazi: 'StreamBuilder2',
     primary: Colors.green,
-    onprimary: Colors.black,
-    rota: '/stream',
+    onprimary: Colors.white,
+    rota: '/stream2',
   ),
 ];

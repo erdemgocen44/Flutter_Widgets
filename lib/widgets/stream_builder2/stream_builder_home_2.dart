@@ -9,9 +9,23 @@ class StreamBuilderHome2 extends StatefulWidget {
 }
 
 class _StreamBuilderHome2State extends State<StreamBuilderHome2> {
-  Future<int?> getNumber() async {
+  late Stream<int?> numbersStream;
+  @override
+  void initState() {
+    super.initState();
+    numbersStream = getNumber();
+  }
+
+  Stream<int?> getNumber() async* {
     await Future.delayed(const Duration(seconds: 4));
-    return 1;
+
+    yield 1;
+    await Future.delayed(const Duration(seconds: 1));
+
+    yield 2;
+    await Future.delayed(const Duration(seconds: 1));
+
+    yield 3;
   }
 
   @override
@@ -20,7 +34,35 @@ class _StreamBuilderHome2State extends State<StreamBuilderHome2> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.refresh_rounded),
+        onPressed: () {
+          setState(() {
+            numbersStream = getNumber();
+          });
+        },
+      ),
+      body: Center(
+        child: StreamBuilder(
+          stream: numbersStream,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Text(
+                'Wait Please',
+                style: TextStyle(fontSize: 45, color: Colors.purple),
+              );
+            } else if (snapshot.hasData) {
+              Object number = snapshot.data!;
+              return Text(
+                '$number',
+                style: TextStyle(fontSize: 45, color: Colors.red),
+              );
+            } else {
+              return const Text('No data!!');
+            }
+          },
+        ),
+      ),
     );
   }
 }
