@@ -9,13 +9,13 @@ List<Widget> buttons = [
     rota: '/clippers',
   ),
   CustomElevatedButton(
-    yazi: 'Glassmorphism',
+    yazi: 'Glass Morphism',
     primary: Colors.red,
     onprimary: Colors.white,
     rota: '/glass',
   ),
   CustomElevatedButton(
-    yazi: 'Neumorphism',
+    yazi: 'Neu Morphism',
     primary: Colors.green,
     onprimary: Colors.black,
     rota: '/neumorp',
@@ -27,13 +27,13 @@ List<Widget> buttons = [
     rota: '/flexible',
   ),
   CustomElevatedButton(
-    yazi: 'Checkbox',
+    yazi: 'Check Box',
     primary: Colors.blueGrey,
     onprimary: Colors.black,
     rota: '/checkbox',
   ),
   CustomElevatedButton(
-    yazi: 'ClipRRect',
+    yazi: 'Clip RRect',
     primary: Colors.blue,
     onprimary: Colors.white,
     rota: '/cliprrect',
@@ -51,13 +51,13 @@ List<Widget> buttons = [
     rota: '/selectable',
   ),
   CustomElevatedButton(
-    yazi: 'AlertDialog',
+    yazi: 'Alert Dialog',
     primary: Colors.purpleAccent,
     onprimary: Colors.black,
     rota: '/alert',
   ),
   CustomElevatedButton(
-    yazi: 'SpreadOperator',
+    yazi: 'Spread Operator',
     primary: Colors.black87,
     onprimary: Colors.white,
     rota: '/spread',
@@ -75,7 +75,7 @@ List<Widget> buttons = [
     rota: '/positioned',
   ),
   CustomElevatedButton(
-    yazi: 'FittedBox',
+    yazi: 'Fitted Box',
     primary: Colors.deepOrangeAccent,
     onprimary: Colors.black,
     rota: '/fitted',
@@ -111,13 +111,13 @@ List<Widget> buttons = [
     rota: '/future',
   ),
   CustomElevatedButton(
-    yazi: 'StreamBuilder',
+    yazi: 'Stream Builder',
     primary: Colors.cyan,
     onprimary: Colors.black,
     rota: '/stream',
   ),
   CustomElevatedButton(
-    yazi: 'StreamBuilder2',
+    yazi: 'Stream Builder2',
     primary: Colors.green,
     onprimary: Colors.white,
     rota: '/stream2',
