@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/core/buttons.dart';
 
-import 'core/my_button.dart';
-
 void main() => runApp(HomePage());
 
 class HomePage extends StatefulWidget {
