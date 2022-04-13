@@ -30,6 +30,7 @@ class CustomElevatedButton extends StatelessWidget {
         child: Text(
           yazi,
           style: const TextStyle(
+            fontWeight: FontWeight.bold,
             fontSize: 12,
           ),
           textAlign: TextAlign.center,
