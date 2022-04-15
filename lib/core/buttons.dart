@@ -107,7 +107,7 @@ List<Widget> buttons = [
   CustomElevatedButton(
     yazi: 'Future',
     primary: Colors.deepPurple,
-    onprimary: Colors.black,
+    onprimary: Colors.white,
     rota: '/future',
   ),
   CustomElevatedButton(
