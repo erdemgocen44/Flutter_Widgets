@@ -24,7 +24,7 @@ class CustomElevatedButton extends StatelessWidget {
         },
         style: ElevatedButton.styleFrom(
             elevation: 10.0,
-            primary: primary, // Background color
+            primary: primary, // Background color ayarla
             onPrimary: onprimary // Text Color (Foreground color)
             ),
         child: Text(
