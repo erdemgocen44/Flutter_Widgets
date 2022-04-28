@@ -10,6 +10,7 @@ import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/futures/futures_home.dart';
 import 'package:widgets/widgets/glassmorphism/glass_home.dart';
 import 'package:widgets/widgets/intractive_viewer/interactive_viewer.dart';
+import 'package:widgets/widgets/navigation_bar/navigation_bar_home.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'package:widgets/widgets/positioned/positioned_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
@@ -82,5 +83,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/future": (context) => const FutureHome(
         title: 'Future',
+      ),
+  "/navigationbar": (context) => const NavigationBarHome(
+        title: 'Navigation Bar',
       ),
 };

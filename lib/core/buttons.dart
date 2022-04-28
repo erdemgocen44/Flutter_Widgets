@@ -122,4 +122,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/stream2',
   ),
+  CustomElevatedButton(
+    yazi: 'Navigation Bar',
+    primary: Colors.grey,
+    onprimary: Colors.black,
+    rota: '/stream2',
+  ),
 ];
