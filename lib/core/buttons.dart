@@ -126,6 +126,6 @@ List<Widget> buttons = [
     yazi: 'Navigation Bar',
     primary: Colors.grey,
     onprimary: Colors.black,
-    rota: '/stream2',
+    rota: '/navigationbar',
   ),
 ];
