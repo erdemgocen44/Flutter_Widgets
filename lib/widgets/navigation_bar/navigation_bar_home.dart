@@ -34,9 +34,15 @@ class _NavigationBarHomeState extends State<NavigationBarHome> {
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
           indicatorColor: Colors.white.withOpacity(0.5),
+          labelTextStyle: MaterialStateProperty.all(
+            const TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
         child: NavigationBar(
-          backgroundColor: Colors.white10,
+          backgroundColor: Colors.amberAccent,
           animationDuration: const Duration(seconds: 1),
           labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
           selectedIndex: _currentIndex,
