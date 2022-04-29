@@ -31,7 +31,44 @@ class _NavigationBarHomeState extends State<NavigationBarHome> {
       body: Center(
         child: pages[_currentIndex],
       ),
-      bottomNavigationBar: NavigationBar(selectedIndex: _currentIndex),
+      bottomNavigationBar: NavigationBarTheme(
+        data: NavigationBarThemeData(
+          indicatorColor: Colors.white.withOpacity(0.5),
+        ),
+        child: NavigationBar(
+          backgroundColor: Colors.white10,
+          animationDuration: const Duration(seconds: 1),
+          labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
+          selectedIndex: _currentIndex,
+          onDestinationSelected: (int newIndex) {
+            setState(() {
+              _currentIndex = newIndex;
+            });
+          },
+          destinations: const [
+            NavigationDestination(
+              icon: Icon(Icons.eco),
+              label: 'eco',
+              selectedIcon: Icon(Icons.eco),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.home),
+              label: 'home',
+              selectedIcon: Icon(Icons.home),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.person),
+              label: 'person',
+              selectedIcon: Icon(Icons.person),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.video_call),
+              label: 'video',
+              selectedIcon: Icon(Icons.video_call),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
