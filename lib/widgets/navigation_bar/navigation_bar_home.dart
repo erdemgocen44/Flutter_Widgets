@@ -31,6 +31,7 @@ class _NavigationBarHomeState extends State<NavigationBarHome> {
       body: Center(
         child: pages[_currentIndex],
       ),
+      bottomNavigationBar: NavigationBar(selectedIndex: _currentIndex),
     );
   }
 }
