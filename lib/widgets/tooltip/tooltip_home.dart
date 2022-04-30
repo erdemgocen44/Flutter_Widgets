@@ -16,8 +16,11 @@ class _TooltipHomeState extends State<TooltipHome> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: //koyduğumuz resim için açıklama eklememizi sağlar
-            Tooltip(message: 'Image Message', child: Image.network(resim400)),
+        child: //koyduğumuz resim için açıklama eklememizi sağlar.resmin üzerine uzun basıldığında mesajı gösterir
+            Tooltip(
+                //aynı şekilde resim dışında icon içinde tooltip ile sarmaladığımızda açıklama ekleyebiliriz
+                message: 'Buraya istediğini yazabilirsiniz',
+                child: Image.network(resim400)),
       ),
     );
   }
