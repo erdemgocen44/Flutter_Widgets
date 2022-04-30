@@ -87,4 +87,7 @@ var rotalar = <String, WidgetBuilder>{
   "/navigationbar": (context) => const NavigationBarHome(
         title: 'Navigation Bar',
       ),
+  "/tooltip": (context) => const NavigationBarHome(
+        title: 'Tooltip',
+      ),
 };
