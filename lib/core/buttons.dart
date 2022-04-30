@@ -128,4 +128,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/navigationbar',
   ),
+  CustomElevatedButton(
+    yazi: 'Tooltip',
+    primary: Colors.indigo,
+    onprimary: Colors.white,
+    rota: '/tooltip',
+  ),
 ];
