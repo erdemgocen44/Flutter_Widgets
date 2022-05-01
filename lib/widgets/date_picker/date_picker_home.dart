@@ -8,7 +8,7 @@ class DatePickerHome extends StatefulWidget {
 }
 
 class _DatePickerHomeState extends State<DatePickerHome> {
-  DateTime _dateTime = DateTime(2100);
+  DateTime _dateTime = DateTime.now();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +17,7 @@ class _DatePickerHomeState extends State<DatePickerHome> {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               '${_dateTime.day}-${_dateTime.month}-${_dateTime.year}',
