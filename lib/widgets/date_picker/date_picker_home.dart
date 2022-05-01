@@ -21,7 +21,21 @@ class _DatePickerHomeState extends State<DatePickerHome> {
             Text(
               '${_dateTime.day}-${_dateTime.month}-${_dateTime.year}',
               style: const TextStyle(fontSize: 40),
-            )
+            ),
+            ElevatedButton(
+                onPressed: () async {
+                  DateTime? _newDate = await showDatePicker(
+                      context: context,
+                      initialDate: _dateTime,
+                      firstDate: DateTime(1800),
+                      lastDate: DateTime(3000));
+                  if (_newDate != null) {
+                    setState(() {
+                      _dateTime = _newDate;
+                    });
+                  }
+                },
+                child: Text('Get Date!'))
           ],
         ),
       ),
