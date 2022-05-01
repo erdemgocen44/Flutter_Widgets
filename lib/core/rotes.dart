@@ -5,6 +5,7 @@ import 'package:widgets/widgets/alert_dialog/alert_dialog.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
+import 'package:widgets/widgets/date_picker/date_picker_home.dart';
 import 'package:widgets/widgets/fitted_box/fitted_box_home.dart';
 import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/futures/futures_home.dart';
@@ -90,5 +91,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/tooltip": (context) => const TooltipHome(
         title: 'Tooltip',
+      ),
+  "/date": (context) => const DatePickerHome(
+        title: 'Date Picker',
       ),
 };

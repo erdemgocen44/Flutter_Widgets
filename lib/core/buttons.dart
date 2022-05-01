@@ -134,4 +134,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/tooltip',
   ),
+  CustomElevatedButton(
+    yazi: 'Date Picker',
+    primary: Colors.greenAccent,
+    onprimary: Colors.black,
+    rota: '/date',
+  ),
 ];
