@@ -10,9 +10,21 @@ class WillPopScopeHome extends StatefulWidget {
 class _WillPopScopeHomeState extends State<WillPopScopeHome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return WillPopScope(
+      onWillPop: () async {
+        return false;
+      },
+      child: Scaffold(
+        backgroundColor: Colors.blue,
+        appBar: AppBar(
+          leading: IconButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              icon: Icon(Icons.arrow_back_ios_new_rounded)),
+          title: Text(widget.title),
+        ),
+        body: const Center(),
       ),
     );
   }
