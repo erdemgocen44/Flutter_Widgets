@@ -23,6 +23,7 @@ import 'package:widgets/widgets/stream_builder2/stream_builder_home_2.dart';
 import 'package:widgets/widgets/table/table_home.dart';
 import 'package:widgets/widgets/tooltip/tooltip_home.dart';
 import 'package:widgets/widgets/visibility/visibility.dart';
+import 'package:widgets/widgets/will_pop_scope/will_pop_scope.dart';
 
 var rotalar = <String, WidgetBuilder>{
   "/home": (context) => HomePage(),
@@ -94,7 +95,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/date": (context) => const DatePickerHome(
         title: 'Date Picker',
-      ),"/will": (context) => const (
+      ),
+  "/will": (context) => const WillPopScopeHome(
         title: 'WillPopScope',
       ),
 };
