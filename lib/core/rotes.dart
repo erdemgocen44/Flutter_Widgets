@@ -94,5 +94,7 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/date": (context) => const DatePickerHome(
         title: 'Date Picker',
+      ),"/will": (context) => const (
+        title: 'WillPopScope',
       ),
 };

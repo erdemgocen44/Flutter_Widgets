@@ -140,4 +140,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/date',
   ),
+  CustomElevatedButton(
+    yazi: 'WillPopScope',
+    primary: Colors.lightBlue,
+    onprimary: Colors.white,
+    rota: '/will',
+  ),
 ];
