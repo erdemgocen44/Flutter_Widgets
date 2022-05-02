@@ -17,11 +17,12 @@ class _WillPopScopeHomeState extends State<WillPopScopeHome> {
       child: Scaffold(
         backgroundColor: Colors.blue,
         appBar: AppBar(
+          //bu widget sayesinde geri butonu deaktif oluyor
           leading: IconButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              icon: Icon(Icons.arrow_back_ios_new_rounded)),
+              icon: const Icon(Icons.arrow_back_ios_new_rounded)),
           title: Text(widget.title),
         ),
         body: const Center(),
