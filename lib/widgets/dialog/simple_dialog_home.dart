@@ -15,8 +15,15 @@ class _SimpleDialogHomeState extends State<SimpleDialogHome> {
         title: Text(widget.title),
       ),
       body: Center(
-        child:
-            ElevatedButton(onPressed: () {}, child: const Text('Show Dialog')),
+        child: ElevatedButton(
+            onPressed: () {
+              showDialog(
+                  context: context,
+                  builder: (context) => const SimpleDialog(
+                        title: Text('Erdem GÖÇEN'),
+                      ));
+            },
+            child: const Text('Show Dialog')),
       ),
     );
   }
