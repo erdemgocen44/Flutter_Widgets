@@ -146,4 +146,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/will',
   ),
+  CustomElevatedButton(
+    yazi: 'Simple Dialog',
+    primary: Colors.orange,
+    onprimary: Colors.black,
+    rota: '/dialog',
+  ),
 ];

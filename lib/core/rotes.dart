@@ -6,6 +6,7 @@ import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
 import 'package:widgets/widgets/date_picker/date_picker_home.dart';
+import 'package:widgets/widgets/dialog/simple_dialog_home.dart';
 import 'package:widgets/widgets/fitted_box/fitted_box_home.dart';
 import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/futures/futures_home.dart';
@@ -98,5 +99,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/will": (context) => const WillPopScopeHome(
         title: 'WillPopScope',
+      ),
+  "/dialog": (context) => const SimpleDialogHome(
+        title: 'Simple Dialog',
       ),
 };
