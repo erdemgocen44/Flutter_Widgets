@@ -19,9 +19,9 @@ class _SimpleDialogHomeState extends State<SimpleDialogHome> {
           onPressed: () {
             showDialog(
               context: context,
-              builder: (context) => const SimpleDialog(
+              builder: (context) => SimpleDialog(
                 title: const Text('Erdem GÖÇEN'),
-                contentPadding: const EdgeInsets.all(20.0),
+                contentPadding: EdgeInsets.all(20.0),
                 children: [
                   const Text('More information!!'),
                   TextButton(
