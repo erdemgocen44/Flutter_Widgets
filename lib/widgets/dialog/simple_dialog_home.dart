@@ -20,15 +20,31 @@ class _SimpleDialogHomeState extends State<SimpleDialogHome> {
             showDialog(
               context: context,
               builder: (context) => SimpleDialog(
-                title: const Text('Erdem GÖÇEN'),
-                contentPadding: EdgeInsets.all(20.0),
+                title: const Text(
+                  'Erdem GÖÇEN',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.redAccent,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25),
+                ),
+                contentPadding: const EdgeInsets.all(20.0),
                 children: [
-                  const Text('More information!!'),
+                  const Text(
+                    'More information!!',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   TextButton(
                     onPressed: () {
                       Navigator.of(context).pop();
                     },
-                    child: const Text('Close!!'),
+                    child: const Text(
+                      'Close!!',
+                      textAlign: TextAlign.center,
+                      style:
+                          TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+                    ),
                   ),
                 ],
               ),
