@@ -31,7 +31,7 @@ class _SimpleDialogHomeState extends State<SimpleDialogHome> {
                 contentPadding: const EdgeInsets.all(20.0),
                 children: [
                   const Text(
-                    'More information!!',
+                    'More information',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
