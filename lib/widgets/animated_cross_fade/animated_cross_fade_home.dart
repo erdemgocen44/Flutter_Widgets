@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 class AnimatedCrossFadeHome extends StatefulWidget {
   const AnimatedCrossFadeHome({Key? key, required this.title})
@@ -31,10 +32,13 @@ class _AnimatedCrossFadeHomeState extends State<AnimatedCrossFadeHome> {
       ),
       body: Center(
         child: AnimatedCrossFade(
-            firstChild: firstChild,
-            secondChild: secondChild,
-            crossFadeState: crossFadeState,
-            duration: duration),
+          firstChild: Image.network(resim400),
+          secondChild: Image.network(resim500),
+          crossFadeState: _saluration
+              ? CrossFadeState.showFirst
+              : CrossFadeState.showSecond,
+          duration: const Duration(seconds: 1),
+        ),
       ),
     );
   }
