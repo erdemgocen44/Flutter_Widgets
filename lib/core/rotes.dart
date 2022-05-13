@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets/home_page.dart';
 import 'package:widgets/widgets/adaptive/adaptive_home.dart';
 import 'package:widgets/widgets/alert_dialog/alert_dialog.dart';
+import 'package:widgets/widgets/animated_cross_fade/animated_cross_fade_home.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
@@ -102,5 +103,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/dialog": (context) => const SimpleDialogHome(
         title: 'Simple Dialog',
+      ),
+  "/anime": (context) => const AnimatedCrossFadeHome(
+        title: 'Animated Cross Fade',
       ),
 };

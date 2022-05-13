@@ -152,4 +152,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/dialog',
   ),
+  CustomElevatedButton(
+    yazi: 'Animated Cross Fade',
+    primary: Colors.limeAccent,
+    onprimary: Colors.white,
+    rota: '/dialog',
+  ),
 ];

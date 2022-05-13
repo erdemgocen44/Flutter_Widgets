@@ -22,9 +22,19 @@ class _AnimatedCrossFadeHomeState extends State<AnimatedCrossFadeHome> {
                 _saluration = !_saluration;
               });
             },
-            child: Text('Switch'),
+            child: const Text(
+              'Switch',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ],
+      ),
+      body: Center(
+        child: AnimatedCrossFade(
+            firstChild: firstChild,
+            secondChild: secondChild,
+            crossFadeState: crossFadeState,
+            duration: duration),
       ),
     );
   }
