@@ -15,8 +15,24 @@ class _ModalBottomSheetHomeState extends State<ModalBottomSheetHome> {
         title: Text(widget.title),
       ),
       body: Center(
-        child:
-            ElevatedButton(onPressed: () {}, child: Text('Modal Bottom Sheet')),
+        child: ElevatedButton(
+            onPressed: () {
+              showModalBottomSheet(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.35,
+                      child: Center(
+                        child: ElevatedButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: Text('Close')),
+                      ),
+                    );
+                  });
+            },
+            child: const Text('Modal Bottom Sheet')),
       ),
     );
   }

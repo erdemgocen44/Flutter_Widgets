@@ -13,6 +13,7 @@ import 'package:widgets/widgets/flexible/filexible.dart';
 import 'package:widgets/widgets/futures/futures_home.dart';
 import 'package:widgets/widgets/glassmorphism/glass_home.dart';
 import 'package:widgets/widgets/intractive_viewer/interactive_viewer.dart';
+import 'package:widgets/widgets/modal_bottom_sheet/modal_bottom_sheet_home.dart';
 import 'package:widgets/widgets/navigation_bar/navigation_bar_home.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'package:widgets/widgets/positioned/positioned_home.dart';
@@ -107,7 +108,7 @@ var rotalar = <String, WidgetBuilder>{
   "/anime": (context) => const AnimatedCrossFadeHome(
         title: 'Animated Cross Fade',
       ),
-  "/modal": (context) => const AnimatedCrossFadeHome(
-        title: 'Animated Cross Fade',
+  "/modal": (context) => const ModalBottomSheetHome(
+        title: 'Modal Bottom Sheet',
       ),
 };
