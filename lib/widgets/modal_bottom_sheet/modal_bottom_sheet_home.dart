@@ -10,6 +10,10 @@ class ModalBottomSheetHome extends StatefulWidget {
 class _ModalBottomSheetHomeState extends State<ModalBottomSheetHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+    );
   }
 }
