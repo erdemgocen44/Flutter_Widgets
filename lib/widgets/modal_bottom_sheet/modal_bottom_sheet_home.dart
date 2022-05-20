@@ -27,7 +27,7 @@ class _ModalBottomSheetHomeState extends State<ModalBottomSheetHome> {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: Text('Close')),
+                            child: const Text('Close')),
                       ),
                     );
                   });
