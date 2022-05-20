@@ -33,7 +33,7 @@ class _ModalBottomSheetHomeState extends State<ModalBottomSheetHome> {
                   );
                 });
           },
-          child: const Text('Modal Bottom Sheet'),
+          child: const Text('Click!!'),
         ),
       ),
     );
