@@ -158,4 +158,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/anime',
   ),
+  CustomElevatedButton(
+    yazi: 'Modal Bottom Sheet',
+    primary: Colors.purple,
+    onprimary: Colors.black,
+    rota: '/modal',
+  ),
 ];

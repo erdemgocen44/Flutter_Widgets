@@ -107,4 +107,7 @@ var rotalar = <String, WidgetBuilder>{
   "/anime": (context) => const AnimatedCrossFadeHome(
         title: 'Animated Cross Fade',
       ),
+  "/modal": (context) => const AnimatedCrossFadeHome(
+        title: 'Animated Cross Fade',
+      ),
 };
