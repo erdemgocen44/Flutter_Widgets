@@ -21,7 +21,10 @@ class _PageViewHomeState extends State<PageViewHome> {
             child: const Center(
               child: Text(
                 'Page 1',
-                style: TextStyle(color: Colors.white, fontSize: 60),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -30,7 +33,10 @@ class _PageViewHomeState extends State<PageViewHome> {
             child: const Center(
               child: Text(
                 'Page 2',
-                style: TextStyle(color: Colors.white, fontSize: 60),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -39,7 +45,10 @@ class _PageViewHomeState extends State<PageViewHome> {
             child: const Center(
               child: Text(
                 'Page 3',
-                style: TextStyle(color: Colors.white, fontSize: 60),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -48,7 +57,10 @@ class _PageViewHomeState extends State<PageViewHome> {
             child: const Center(
               child: Text(
                 'Page 4',
-                style: TextStyle(color: Colors.white, fontSize: 60),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),
