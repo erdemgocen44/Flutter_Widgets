@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StepperHome extends StatefulWidget {
-  const StepperHome({Key? key}) : super(key: key);
+  const StepperHome({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   State<StepperHome> createState() => _StepperHomeState();
@@ -10,6 +10,10 @@ class StepperHome extends StatefulWidget {
 class _StepperHomeState extends State<StepperHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+    );
   }
 }
