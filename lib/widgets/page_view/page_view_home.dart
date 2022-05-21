@@ -24,7 +24,34 @@ class _PageViewHomeState extends State<PageViewHome> {
                 style: TextStyle(color: Colors.white, fontSize: 60),
               ),
             ),
-          )
+          ),
+          Container(
+            color: Colors.blueAccent,
+            child: const Center(
+              child: Text(
+                'Page 1',
+                style: TextStyle(color: Colors.white, fontSize: 60),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.blueAccent,
+            child: const Center(
+              child: Text(
+                'Page 1',
+                style: TextStyle(color: Colors.white, fontSize: 60),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.blueAccent,
+            child: const Center(
+              child: Text(
+                'Page 1',
+                style: TextStyle(color: Colors.white, fontSize: 60),
+              ),
+            ),
+          ),
         ],
       ),
     );
