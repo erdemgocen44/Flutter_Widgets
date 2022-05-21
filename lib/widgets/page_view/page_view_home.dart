@@ -14,6 +14,19 @@ class _PageViewHomeState extends State<PageViewHome> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      body: PageView(
+        children: [
+          Container(
+            color: Colors.blueAccent,
+            child: const Center(
+              child: Text(
+                'Page 1',
+                style: TextStyle(color: Colors.white, fontSize: 60),
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
