@@ -8,11 +8,20 @@ class StepperHome extends StatefulWidget {
 }
 
 class _StepperHomeState extends State<StepperHome> {
+  int _currentStep = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+      ),
+      body: Center(
+        child: Stepper(steps: const [
+          Step(
+            title: Text('Step 1'),
+            content: Text('Information for step 1'),
+          ),
+        ]),
       ),
     );
   }
