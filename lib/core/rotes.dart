@@ -115,4 +115,7 @@ var rotalar = <String, WidgetBuilder>{
   "/stepper": (context) => const StepperHome(
         title: 'Stepper',
       ),
+  "/pageview": (context) => const PageV(
+        title: 'Page View',
+      ),
 };
