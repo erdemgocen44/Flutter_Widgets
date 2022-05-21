@@ -21,6 +21,7 @@ import 'package:widgets/widgets/selectable/selectable.dart';
 import 'package:widgets/widgets/spacer/spacer_home.dart';
 import 'package:widgets/widgets/spread_operator/spread_operator.dart';
 import 'package:widgets/widgets/stackhome/stack_home.dart';
+import 'package:widgets/widgets/stepper/stepper_home.dart';
 import 'package:widgets/widgets/stream_builder/stream_builder_home.dart';
 import 'package:widgets/widgets/stream_builder2/stream_builder_home_2.dart';
 import 'package:widgets/widgets/table/table_home.dart';
@@ -110,5 +111,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/modal": (context) => const ModalBottomSheetHome(
         title: 'Modal Bottom Sheet',
+      ),
+  "/stepper": (context) => const StepperHome(
+        title: 'Stepper',
       ),
 };
