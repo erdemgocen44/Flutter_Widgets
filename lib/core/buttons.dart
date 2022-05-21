@@ -164,4 +164,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/modal',
   ),
+  CustomElevatedButton(
+    yazi: 'Stepper',
+    primary: Colors.purpleAccent,
+    onprimary: Colors.white,
+    rota: '/stepper',
+  ),
 ];
