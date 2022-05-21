@@ -26,28 +26,28 @@ class _PageViewHomeState extends State<PageViewHome> {
             ),
           ),
           Container(
-            color: Colors.blueAccent,
+            color: Colors.purpleAccent,
             child: const Center(
               child: Text(
-                'Page 1',
+                'Page 2',
                 style: TextStyle(color: Colors.white, fontSize: 60),
               ),
             ),
           ),
           Container(
-            color: Colors.blueAccent,
+            color: Colors.amberAccent,
             child: const Center(
               child: Text(
-                'Page 1',
+                'Page 3',
                 style: TextStyle(color: Colors.white, fontSize: 60),
               ),
             ),
           ),
           Container(
-            color: Colors.blueAccent,
+            color: Colors.redAccent,
             child: const Center(
               child: Text(
-                'Page 1',
+                'Page 4',
                 style: TextStyle(color: Colors.white, fontSize: 60),
               ),
             ),
