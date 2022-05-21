@@ -170,4 +170,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/stepper',
   ),
+  CustomElevatedButton(
+    yazi: 'Page View',
+    primary: Colors.red,
+    onprimary: Colors.black,
+    rota: '/pageview',
+  ),
 ];
