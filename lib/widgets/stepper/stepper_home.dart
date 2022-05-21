@@ -41,6 +41,20 @@ class _StepperHomeState extends State<StepperHome> {
             });
           },
           currentStep: _currentStep,
+          onStepContinue: () {
+            if (_currentStep != 2) {
+              setState(() {
+                _currentStep += 1;
+              });
+            }
+          },
+          onStepCancel: () {
+            if (_currentStep != 0) {
+              setState(() {
+                _currentStep -= 1;
+              });
+            }
+          },
         ),
       ),
     );
