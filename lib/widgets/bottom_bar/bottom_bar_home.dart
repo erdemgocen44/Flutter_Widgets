@@ -23,6 +23,20 @@ class _BottomBarHomeState extends State<BottomBarHome> {
       body: Center(
         child: body[_currentIndex],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        onTap: (int newIndex) {
+          setState(() {
+            _currentIndex = newIndex;
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Icon(Icons.home_outlined),
+          )
+        ],
+      ),
     );
   }
 }
