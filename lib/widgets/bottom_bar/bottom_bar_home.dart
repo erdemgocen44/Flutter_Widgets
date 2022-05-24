@@ -34,7 +34,15 @@ class _BottomBarHomeState extends State<BottomBarHome> {
           BottomNavigationBarItem(
             label: 'Home',
             icon: Icon(Icons.home_outlined),
-          )
+          ),
+          BottomNavigationBarItem(
+            label: 'Menu',
+            icon: Icon(Icons.menu_outlined),
+          ),
+          BottomNavigationBarItem(
+            label: 'Profile',
+            icon: Icon(Icons.person_outlined),
+          ),
         ],
       ),
     );
