@@ -36,6 +36,7 @@ class _BottomBarHomeState extends State<BottomBarHome> {
         child: body[_currentIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 15,
         currentIndex: _currentIndex,
         onTap: (int newIndex) {
           setState(() {
