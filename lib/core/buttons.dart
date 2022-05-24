@@ -176,4 +176,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/pageview',
   ),
+  CustomElevatedButton(
+    yazi: 'Bottom Bar',
+    primary: Colors.teal,
+    onprimary: Colors.white,
+    rota: '/pageview',
+  ),
 ];

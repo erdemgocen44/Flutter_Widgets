@@ -3,6 +3,7 @@ import 'package:widgets/home_page.dart';
 import 'package:widgets/widgets/adaptive/adaptive_home.dart';
 import 'package:widgets/widgets/alert_dialog/alert_dialog.dart';
 import 'package:widgets/widgets/animated_cross_fade/animated_cross_fade_home.dart';
+import 'package:widgets/widgets/bottom_bar/bottom_bar_home.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
@@ -118,5 +119,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/pageview": (context) => const PageViewHome(
         title: 'Page View',
+      ),
+  "/bottom": (context) => const BottomBarHome(
+        title: 'Bottom Bar',
       ),
 };
