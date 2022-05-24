@@ -10,9 +10,21 @@ class BottomBarHome extends StatefulWidget {
 class _BottomBarHomeState extends State<BottomBarHome> {
   int _currentIndex = 0;
   List<Widget> body = const [
-    Icon(Icons.home_outlined),
-    Icon(Icons.menu_outlined),
-    Icon(Icons.person_outlined),
+    Icon(
+      Icons.home_outlined,
+      size: 45,
+      color: Colors.redAccent,
+    ),
+    Icon(
+      Icons.menu_outlined,
+      size: 45,
+      color: Colors.blueAccent,
+    ),
+    Icon(
+      Icons.person_outlined,
+      size: 45,
+      color: Colors.greenAccent,
+    ),
   ];
   @override
   Widget build(BuildContext context) {
