@@ -8,8 +8,21 @@ class BottomBarHome extends StatefulWidget {
 }
 
 class _BottomBarHomeState extends State<BottomBarHome> {
+  int _currentIndex = 0;
+  List<Widget> body = const [
+    Icon(Icons.home_outlined),
+    Icon(Icons.menu_outlined),
+    Icon(Icons.person_outlined),
+  ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: body[_currentIndex],
+      ),
+    );
   }
 }

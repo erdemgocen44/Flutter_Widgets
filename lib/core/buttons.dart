@@ -180,6 +180,6 @@ List<Widget> buttons = [
     yazi: 'Bottom Bar',
     primary: Colors.teal,
     onprimary: Colors.white,
-    rota: '/pageview',
+    rota: '/bottom',
   ),
 ];
