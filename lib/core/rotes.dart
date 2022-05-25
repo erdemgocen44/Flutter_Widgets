@@ -124,7 +124,5 @@ var rotalar = <String, WidgetBuilder>{
   "/bottom": (context) => const BottomBarHome(
         title: 'Bottom Bar',
       ),
-  "/popup": (context) => const PopupMenuHome(
-        title: 'PopUp Menu',
-      ),
+  "/popup": (context) => const PopupMenuHome(),
 };
