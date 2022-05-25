@@ -41,9 +41,9 @@ class _PopupMenuHomeState extends State<PopupMenuHome> {
         child: Text(
           'Yukarıdaki 3 noktadan sayfayı seçiniz',
           style: TextStyle(
-            fontSize: 25,
-            color: Colors.redAccent,
-          ),
+              fontSize: 25,
+              color: Colors.redAccent,
+              fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),
       ),
