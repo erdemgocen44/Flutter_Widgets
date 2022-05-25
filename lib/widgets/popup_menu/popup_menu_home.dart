@@ -10,6 +10,11 @@ class PopupMenuHome extends StatefulWidget {
 class _PopupMenuHomeState extends State<PopupMenuHome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(),
+    );
   }
 }
