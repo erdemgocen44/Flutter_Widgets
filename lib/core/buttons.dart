@@ -182,4 +182,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/bottom',
   ),
+  CustomElevatedButton(
+    yazi: 'PopUp Menu',
+    primary: Colors.redAccent,
+    onprimary: Colors.black,
+    rota: '/bottom',
+  ),
 ];

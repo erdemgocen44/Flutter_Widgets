@@ -18,6 +18,7 @@ import 'package:widgets/widgets/modal_bottom_sheet/modal_bottom_sheet_home.dart'
 import 'package:widgets/widgets/navigation_bar/navigation_bar_home.dart';
 import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'package:widgets/widgets/page_view/page_view_home.dart';
+import 'package:widgets/widgets/popup_menu/popup_menu_home.dart';
 import 'package:widgets/widgets/positioned/positioned_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
 import 'package:widgets/widgets/spacer/spacer_home.dart';
@@ -122,5 +123,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/bottom": (context) => const BottomBarHome(
         title: 'Bottom Bar',
+      ),
+  "/popup": (context) => const PopupMenuHome(
+        title: 'PopUp Menu',
       ),
 };
