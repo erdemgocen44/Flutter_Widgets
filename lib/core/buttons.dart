@@ -186,6 +186,6 @@ List<Widget> buttons = [
     yazi: 'PopUp Menu',
     primary: Colors.redAccent,
     onprimary: Colors.black,
-    rota: '/bottom',
+    rota: '/popup',
   ),
 ];

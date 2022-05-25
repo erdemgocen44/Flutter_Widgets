@@ -8,11 +8,24 @@ class PopupMenuHome extends StatefulWidget {
 }
 
 class _PopupMenuHomeState extends State<PopupMenuHome> {
+  String title = 'First Page';
+  String firstPage = 'First Page';
+  String secondPage = 'Second Page';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        actions: [
+          PopupMenuButton(
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                child: Text(firstPage),
+              ),
+            ],
+          ),
+        ],
       ),
       body: Center(),
     );
