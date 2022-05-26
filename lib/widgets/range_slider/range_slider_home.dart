@@ -8,7 +8,7 @@ class RangeSliderHome extends StatefulWidget {
 }
 
 class _RangeSliderHomeState extends State<RangeSliderHome> {
-  RangeValues values = const RangeValues(0.1, 0.5);
+  RangeValues values = const RangeValues(0.1, 0.6);
   @override
   Widget build(BuildContext context) {
     RangeLabels labels = RangeLabels(
@@ -22,7 +22,7 @@ class _RangeSliderHomeState extends State<RangeSliderHome> {
       body: Center(
         child: RangeSlider(
             values: values,
-            divisions: 8,
+            divisions: 10,
             labels: labels,
             onChanged: (newValues) {
               setState(() {
