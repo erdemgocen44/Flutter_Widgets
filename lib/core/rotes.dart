@@ -20,6 +20,7 @@ import 'package:widgets/widgets/neumorphism/neu_home.dart';
 import 'package:widgets/widgets/page_view/page_view_home.dart';
 import 'package:widgets/widgets/popup_menu/popup_menu_home.dart';
 import 'package:widgets/widgets/positioned/positioned_home.dart';
+import 'package:widgets/widgets/range_slider/range_slider_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
 import 'package:widgets/widgets/spacer/spacer_home.dart';
 import 'package:widgets/widgets/spread_operator/spread_operator.dart';
@@ -125,7 +126,7 @@ var rotalar = <String, WidgetBuilder>{
   "/bottom": (context) => const BottomBarHome(
         title: 'Bottom Bar',
       ),
-  "/bottom": (context) => const BottomBarHome(
-        title: 'Bottom Bar',
+  "/range": (context) => const RangeSliderHome(
+        title: 'Range Slider',
       ),
 };
