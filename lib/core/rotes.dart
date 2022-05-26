@@ -121,8 +121,11 @@ var rotalar = <String, WidgetBuilder>{
   "/pageview": (context) => const PageViewHome(
         title: 'Page View',
       ),
+  "/popup": (context) => const PopupMenuHome(),
   "/bottom": (context) => const BottomBarHome(
         title: 'Bottom Bar',
       ),
-  "/popup": (context) => const PopupMenuHome(),
+  "/bottom": (context) => const BottomBarHome(
+        title: 'Bottom Bar',
+      ),
 };
