@@ -198,6 +198,6 @@ List<Widget> buttons = [
     yazi: 'Time Picker',
     primary: Colors.yellow,
     onprimary: Colors.black,
-    rota: '/range',
+    rota: '/time',
   ),
 ];
