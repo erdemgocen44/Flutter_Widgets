@@ -10,6 +10,10 @@ class TimePickerHome extends StatefulWidget {
 class _TimePickerHomeState extends State<TimePickerHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+    );
   }
 }
