@@ -29,6 +29,7 @@ import 'package:widgets/widgets/stepper/stepper_home.dart';
 import 'package:widgets/widgets/stream_builder/stream_builder_home.dart';
 import 'package:widgets/widgets/stream_builder2/stream_builder_home_2.dart';
 import 'package:widgets/widgets/table/table_home.dart';
+import 'package:widgets/widgets/time_picker/time_picker_home.dart';
 import 'package:widgets/widgets/tooltip/tooltip_home.dart';
 import 'package:widgets/widgets/visibility/visibility.dart';
 import 'package:widgets/widgets/will_pop_scope/will_pop_scope.dart';
@@ -128,5 +129,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/range": (context) => const RangeSliderHome(
         title: 'Range Slider',
+      ),
+  "/time": (context) => const TimePickerHome(
+        title: 'Time Picker',
       ),
 };
