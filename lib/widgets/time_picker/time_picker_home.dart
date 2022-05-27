@@ -8,7 +8,7 @@ class TimePickerHome extends StatefulWidget {
 }
 
 class _TimePickerHomeState extends State<TimePickerHome> {
-  TimeOfDay? time = const TimeOfDay(hour: 24, minute: 12);
+  TimeOfDay? time = const TimeOfDay(hour: 23, minute: 12);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,9 +18,22 @@ class _TimePickerHomeState extends State<TimePickerHome> {
       body: Center(
         child: Text(
           '${time!.hour.toString()}:${time!.minute.toString()}',
-          style: const TextStyle(fontSize: 60),
+          style: const TextStyle(fontSize: 75, fontWeight: FontWeight.bold),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () async {
+            TimeOfDay? newTime = await showTimePicker(
+              context: context,
+              initialTime: time!,
+            );
+            if (newTime != null) {
+              setState(() {
+                time = newTime;
+              });
+            }
+          },
+          child: Icon(Icons.access_time_outlined)),
     );
   }
 }
