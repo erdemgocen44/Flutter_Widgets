@@ -190,8 +190,14 @@ List<Widget> buttons = [
   ),
   CustomElevatedButton(
     yazi: 'PopUp Menu',
-    primary: Colors.yellow,
+    primary: Colors.black,
     onprimary: Colors.white,
+    rota: '/range',
+  ),
+  CustomElevatedButton(
+    yazi: 'Time Picker',
+    primary: Colors.yellow,
+    onprimary: Colors.black,
     rota: '/range',
   ),
 ];
