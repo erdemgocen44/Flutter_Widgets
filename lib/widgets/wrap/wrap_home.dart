@@ -33,6 +33,7 @@ class _WrapHomeState extends State<WrapHome> {
       ),
       body: Center(
         child: Wrap(
+          //Bu widget sayesinde row ile ekrana sığdıramadığımız dataları ekrana sığmadıkça aşagı otomatik kaydırma özelliği katıyoruz.
           children: _list,
         ),
       ),
