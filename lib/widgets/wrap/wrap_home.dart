@@ -10,6 +10,6 @@ class WrapHome extends StatefulWidget {
 class _WrapHomeState extends State<WrapHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

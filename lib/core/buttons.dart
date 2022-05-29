@@ -200,4 +200,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/time',
   ),
+  CustomElevatedButton(
+    yazi: 'Wrap',
+    primary: Colors.black87,
+    onprimary: Colors.white,
+    rota: '/wrap',
+  ),
 ];

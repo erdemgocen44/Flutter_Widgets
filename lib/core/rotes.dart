@@ -33,6 +33,7 @@ import 'package:widgets/widgets/time_picker/time_picker_home.dart';
 import 'package:widgets/widgets/tooltip/tooltip_home.dart';
 import 'package:widgets/widgets/visibility/visibility.dart';
 import 'package:widgets/widgets/will_pop_scope/will_pop_scope.dart';
+import 'package:widgets/widgets/wrap/wrap_home.dart';
 
 var rotalar = <String, WidgetBuilder>{
   "/home": (context) => HomePage(),
@@ -132,5 +133,8 @@ var rotalar = <String, WidgetBuilder>{
       ),
   "/time": (context) => const TimePickerHome(
         title: 'Time Picker',
+      ),
+  "/wrap": (context) => const WrapHome(
+        title: 'Wrap',
       ),
 };
