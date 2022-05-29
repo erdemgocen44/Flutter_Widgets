@@ -15,8 +15,8 @@ class _WrapHomeState extends State<WrapHome> {
       padding: const EdgeInsets.all(8.0),
       child: Image.network(
         resim200,
-        height: MediaQuery.of(context).size.height * 0.1,
-        width: MediaQuery.of(context).size.width * 0.1,
+        height: MediaQuery.of(context).size.height * 0.2,
+        width: MediaQuery.of(context).size.width * 0.25,
         fit: BoxFit.cover,
       ),
     );
@@ -30,6 +30,11 @@ class _WrapHomeState extends State<WrapHome> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+      ),
+      body: Center(
+        child: Wrap(
+          children: _list,
+        ),
       ),
     );
   }

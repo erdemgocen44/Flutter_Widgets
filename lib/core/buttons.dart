@@ -202,7 +202,7 @@ List<Widget> buttons = [
   ),
   CustomElevatedButton(
     yazi: 'Wrap',
-    primary: Colors.black87,
+    primary: Colors.cyan,
     onprimary: Colors.white,
     rota: '/wrap',
   ),
