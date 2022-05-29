@@ -20,6 +20,17 @@ class _WrapHomeState extends State<WrapHome> {
         fit: BoxFit.cover,
       ),
     );
-    return Scaffold();
+    List<Widget> _list = [
+      _image,
+      _image,
+      _image,
+      _image,
+      _image,
+    ];
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+    );
   }
 }
