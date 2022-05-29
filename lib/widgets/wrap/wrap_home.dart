@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class WrapHome extends StatefulWidget {
-  const WrapHome({Key? key}) : super(key: key);
-
+  const WrapHome({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<WrapHome> createState() => _WrapHomeState();
 }
