@@ -10,6 +10,13 @@ class SliverAppbarHome extends StatefulWidget {
 class _SliverAppbarHomeState extends State<SliverAppbarHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: CustomScrollView(slivers: [
+        SliverList(
+            delegate: SliverChildListDelegate([
+          const Text('Sliver', style: TextStyle(fontSize: 500)),
+        ]))
+      ]),
+    );
   }
 }
