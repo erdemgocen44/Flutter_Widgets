@@ -13,7 +13,7 @@ class _SliverAppbarHomeState extends State<SliverAppbarHome> {
     return Scaffold(
       body: CustomScrollView(slivers: [
         const SliverAppBar(
-          pinned: false,
+          pinned: true,
           floating: true,
           title: Text('Flutter'),
           snap: true,
