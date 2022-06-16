@@ -206,4 +206,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/wrap',
   ),
+  CustomElevatedButton(
+    yazi: 'Expansion Tile',
+    primary: Colors.deepOrange,
+    onprimary: Colors.black,
+    rota: '/expansion',
+  ),
 ];
