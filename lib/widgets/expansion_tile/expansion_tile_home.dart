@@ -16,6 +16,8 @@ class _ExpansionTileHomeState extends State<ExpansionTileHome> {
       ),
       body: const ExpansionTile(
         collapsedBackgroundColor: Colors.amberAccent,
+        collapsedTextColor: Colors.white,
+        iconColor: Colors.orangeAccent,
         leading: Icon(Icons.favorite),
         backgroundColor: Colors.black12,
         title: Text('See more!!'),
