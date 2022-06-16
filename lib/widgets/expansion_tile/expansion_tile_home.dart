@@ -10,6 +10,24 @@ class ExpansionTileHome extends StatefulWidget {
 class _ExpansionTileHomeState extends State<ExpansionTileHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: const ExpansionTile(
+        title: Text('See more!!'),
+        children: [
+          ListTile(
+            title: Text('First'),
+          ),
+          ListTile(
+            title: Text('Second'),
+          ),
+          ListTile(
+            title: Text('Third'),
+          ),
+        ],
+      ),
+    );
   }
 }
