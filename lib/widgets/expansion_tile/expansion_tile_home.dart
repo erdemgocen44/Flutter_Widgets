@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ExpansionTileHome extends StatefulWidget {
-  const ExpansionTileHome({Key? key}) : super(key: key);
-
+  const ExpansionTileHome({Key? key, required this.title}) : super(key: key);
+  final String title;
   @override
   State<ExpansionTileHome> createState() => _ExpansionTileHomeState();
 }
