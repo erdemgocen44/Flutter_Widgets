@@ -212,4 +212,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/expansion',
   ),
+  CustomElevatedButton(
+    yazi: 'Sliver Appbar',
+    primary: Colors.deepPurple,
+    onprimary: Colors.white,
+    rota: '/expansion',
+  ),
 ];
