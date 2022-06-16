@@ -216,6 +216,6 @@ List<Widget> buttons = [
     yazi: 'Sliver Appbar',
     primary: Colors.deepPurple,
     onprimary: Colors.white,
-    rota: '/expansion',
+    rota: '/sliver',
   ),
 ];
