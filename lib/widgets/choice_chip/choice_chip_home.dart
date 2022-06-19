@@ -8,8 +8,16 @@ class ChoiceChipHome extends StatefulWidget {
 }
 
 class _ChoiceChipHomeState extends State<ChoiceChipHome> {
+  bool _isSelected = false;
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: const Center(
+        child: ChoiceChip(label: Text("Choice Chip"), selected: _isSelected),
+      ),
+    );
   }
 }
