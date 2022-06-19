@@ -18,7 +18,7 @@ class _ChoiceChipHomeState extends State<ChoiceChipHome> {
       ),
       body: Center(
         child: ChoiceChip(
-          avatar: Image.network(resim100),
+          avatar: Image.asset("assets/images/logo.jpg"),
           label: const Text("Choice Chip"),
           selected: _isSelected,
           onSelected: (newBoolValue) {
