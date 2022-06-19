@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/core/lorem_picture.dart';
 
 class ChoiceChipHome extends StatefulWidget {
   const ChoiceChipHome({Key? key, required this.title}) : super(key: key);
@@ -15,8 +16,17 @@ class _ChoiceChipHomeState extends State<ChoiceChipHome> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: const Center(
-        child: ChoiceChip(label: Text("Choice Chip"), selected: _isSelected),
+      body: Center(
+        child: ChoiceChip(
+          avatar: Image.network(resim100),
+          label: const Text("Choice Chip"),
+          selected: _isSelected,
+          onSelected: (newBoolValue) {
+            setState(() {
+              _isSelected = newBoolValue;
+            });
+          },
+        ),
       ),
     );
   }
