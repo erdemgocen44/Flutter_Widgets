@@ -145,4 +145,7 @@ var rotalar = <String, WidgetBuilder>{
   "/sliver": (context) => const SliverAppbarHome(
         title: 'Sliver AppBar',
       ),
+  "/choice": (context) => const SliverAppbarHome(
+        title: 'Choice Chip',
+      ),
 };

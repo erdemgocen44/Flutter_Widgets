@@ -218,4 +218,10 @@ List<Widget> buttons = [
     onprimary: Colors.white,
     rota: '/sliver',
   ),
+  CustomElevatedButton(
+    yazi: 'Choice Chip',
+    primary: Colors.amberAccent,
+    onprimary: Colors.black,
+    rota: '/choice',
+  ),
 ];
