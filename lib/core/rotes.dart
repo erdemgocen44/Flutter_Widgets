@@ -5,6 +5,7 @@ import 'package:widgets/widgets/alert_dialog/alert_dialog.dart';
 import 'package:widgets/widgets/animated_cross_fade/animated_cross_fade_home.dart';
 import 'package:widgets/widgets/bottom_bar/bottom_bar_home.dart';
 import 'package:widgets/widgets/checkbox/checkbox_listtile.dart';
+import 'package:widgets/widgets/choice_chip/choice_chip_home.dart';
 import 'package:widgets/widgets/clippers/clippers_page.dart';
 import 'package:widgets/widgets/cliprrect/cliprrect.dart';
 import 'package:widgets/widgets/date_picker/date_picker_home.dart';
@@ -145,7 +146,7 @@ var rotalar = <String, WidgetBuilder>{
   "/sliver": (context) => const SliverAppbarHome(
         title: 'Sliver AppBar',
       ),
-  "/choice": (context) => const SliverAppbarHome(
+  "/choice": (context) => const ChoiceChipHome(
         title: 'Choice Chip',
       ),
 };
