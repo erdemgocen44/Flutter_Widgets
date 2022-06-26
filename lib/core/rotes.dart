@@ -23,6 +23,7 @@ import 'package:widgets/widgets/page_view/page_view_home.dart';
 import 'package:widgets/widgets/popup_menu/popup_menu_home.dart';
 import 'package:widgets/widgets/positioned/positioned_home.dart';
 import 'package:widgets/widgets/range_slider/range_slider_home.dart';
+import 'package:widgets/widgets/search_field/search_field_home.dart';
 import 'package:widgets/widgets/selectable/selectable.dart';
 import 'package:widgets/widgets/sliver_appbar/sliver_appbar_home.dart';
 import 'package:widgets/widgets/spacer/spacer_home.dart';
@@ -149,7 +150,7 @@ var rotalar = <String, WidgetBuilder>{
   "/choice": (context) => const ChoiceChipHome(
         title: 'Choice Chip',
       ),
-  "/search": (context) => const ChoiceChipHome(
-        title: 'Choice Chip',
+  "/search": (context) => const SearchFieldHome(
+        title: 'Text SearchField',
       ),
 };

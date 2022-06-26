@@ -16,11 +16,38 @@ class _SearchFieldHomeState extends State<SearchFieldHome> {
         actions: [
           IconButton(
             icon: const Icon(Icons.search_outlined),
-            onPressed: () {},
+            onPressed: () {
+              showSearch(
+                context: context,
+                delegate: MySearchDelagate(),
+              );
+            },
           ),
         ],
       ),
       body: Container(),
     );
+  }
+}
+
+class MySearchDelagate extends SearchDelegate {
+  @override
+  List<Widget>? buildActions(BuildContext context) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget? buildLeading(BuildContext context) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    throw UnimplementedError();
   }
 }
