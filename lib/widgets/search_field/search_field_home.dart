@@ -79,6 +79,7 @@ class MySearchDelagate extends SearchDelegate {
     List<String> suggestions = searchResult.where((searchResult) {
       final result = searchResult.toLowerCase();
       final input = query.toLowerCase();
+      return result.contains(input);
     }).toList();
     return ListView.builder(itemBuilder: (context, index) {
       final suggestion = suggestions[index];
