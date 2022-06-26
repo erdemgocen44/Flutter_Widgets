@@ -13,6 +13,12 @@ class _SearchFieldHomeState extends State<SearchFieldHome> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search_outlined),
+            onPressed: () {},
+          )
+        ],
       ),
     );
   }
