@@ -25,7 +25,14 @@ class _SearchFieldHomeState extends State<SearchFieldHome> {
           ),
         ],
       ),
-      body: Container(),
+      body: Column(
+        children: <Widget>[
+          Container(
+            margin: const EdgeInsets.all(16),
+            child: TextField(),
+          )
+        ],
+      ),
     );
   }
 }
@@ -37,8 +44,6 @@ class MySearchDelagate extends SearchDelegate {
     'Allemand',
     'America',
     'Tokyo',
-    'Japonais',
-    'France'
   ];
   @override
   List<Widget>? buildActions(BuildContext context) {
@@ -47,7 +52,7 @@ class MySearchDelagate extends SearchDelegate {
         if (query.isEmpty) {
           close(context, null); //close searchbar
         } else {
-          query = '';
+          query = ' ';
         }
       },
       icon: const Icon(Icons.clear_rounded),
@@ -81,16 +86,18 @@ class MySearchDelagate extends SearchDelegate {
       final input = query.toLowerCase();
       return result.contains(input);
     }).toList();
-    return ListView.builder(itemBuilder: (context, index) {
-      final suggestion = suggestions[index];
-      return ListTile(
-        title: Text(suggestion),
-        onTap: () {
-          query = suggestion;
-          showResults(context);
-        },
-      );
-    });
+    return ListView.builder(
+        itemCount: searchResult.length,
+        itemBuilder: (context, index) {
+          final suggestion = suggestions[index];
+          return ListTile(
+            title: Text(suggestion),
+            onTap: () {
+              query = suggestion;
+              showResults(context);
+            },
+          );
+        });
     throw UnimplementedError();
   }
 }
