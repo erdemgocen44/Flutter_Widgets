@@ -33,12 +33,18 @@ class _SearchFieldHomeState extends State<SearchFieldHome> {
 class MySearchDelagate extends SearchDelegate {
   @override
   List<Widget>? buildActions(BuildContext context) {
-    throw UnimplementedError();
+    IconButton(
+      onPressed: () => close(context, null), //search barı kapatmak için
+      icon: const Icon(Icons.clear_rounded),
+    );
   }
 
   @override
   Widget? buildLeading(BuildContext context) {
-    throw UnimplementedError();
+    IconButton(
+      onPressed: () {},
+      icon: const Icon(Icons.arrow_back_ios_rounded),
+    );
   }
 
   @override
