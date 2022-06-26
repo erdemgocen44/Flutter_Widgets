@@ -56,6 +56,12 @@ class MySearchDelagate extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
+    return Center(
+      child: Text(
+        query,
+        style: const TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
+      ),
+    );
     throw UnimplementedError();
   }
 
@@ -74,7 +80,10 @@ class MySearchDelagate extends SearchDelegate {
       final suggestion = suggestions[index];
       return ListTile(
         title: Text(suggestion),
-        onTap: () {},
+        onTap: () {
+          query = suggestion;
+          showResults(context);
+        },
       );
     });
     throw UnimplementedError();
