@@ -10,6 +10,10 @@ class SearchFieldHome extends StatefulWidget {
 class _SearchFieldHomeState extends State<SearchFieldHome> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+    );
   }
 }
