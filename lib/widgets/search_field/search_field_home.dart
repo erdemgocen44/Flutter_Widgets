@@ -31,6 +31,15 @@ class _SearchFieldHomeState extends State<SearchFieldHome> {
 }
 
 class MySearchDelagate extends SearchDelegate {
+  List<String> searchResult = [
+    'Turkey',
+    'Suisse',
+    'Allemand',
+    'America',
+    'Tokyo',
+    'Japonais',
+    'France'
+  ];
   @override
   List<Widget>? buildActions(BuildContext context) {
     IconButton(
@@ -67,15 +76,10 @@ class MySearchDelagate extends SearchDelegate {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    List<String> suggestions = [
-      'Turkey',
-      'Suisse',
-      'Allemand',
-      'America',
-      'Tokyo',
-      'Japonais',
-      'France'
-    ];
+    List<String> suggestions = searchResult.where((searchResult) {
+      final result = searchResult.toLowerCase();
+      final input = query.toLowerCase();
+    }).toList();
     return ListView.builder(itemBuilder: (context, index) {
       final suggestion = suggestions[index];
       return ListTile(
