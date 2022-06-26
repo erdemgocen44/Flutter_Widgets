@@ -224,4 +224,10 @@ List<Widget> buttons = [
     onprimary: Colors.black,
     rota: '/choice',
   ),
+  CustomElevatedButton(
+    yazi: 'Search Textfield',
+    primary: Colors.black,
+    onprimary: Colors.white,
+    rota: '/search',
+  ),
 ];
