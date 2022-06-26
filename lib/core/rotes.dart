@@ -149,4 +149,7 @@ var rotalar = <String, WidgetBuilder>{
   "/choice": (context) => const ChoiceChipHome(
         title: 'Choice Chip',
       ),
+  "/search": (context) => const ChoiceChipHome(
+        title: 'Choice Chip',
+      ),
 };
