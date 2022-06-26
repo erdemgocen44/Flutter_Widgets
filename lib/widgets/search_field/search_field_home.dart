@@ -17,9 +17,10 @@ class _SearchFieldHomeState extends State<SearchFieldHome> {
           IconButton(
             icon: const Icon(Icons.search_outlined),
             onPressed: () {},
-          )
+          ),
         ],
       ),
+      body: Container(),
     );
   }
 }
